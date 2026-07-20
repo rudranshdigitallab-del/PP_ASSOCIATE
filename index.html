@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P. P. SHINDE & ASSOCIATES | Premier Indian Law Firm</title>
+  <meta name="description" content="P. P. SHINDE & ASSOCIATES is a premier law firm offering legal representation across Civil, Criminal, Property & RERA, and Corporate Law in India.">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="P. P. SHINDE & ASSOCIATES | Advocates & Legal Consultants">
+  <meta property="og:description" content="Trusted Legal Solutions with Integrity and Experience. Available in English, Hindi, and Marathi.">
+  <meta property="og:type" content="website">
+
+  <!-- Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Frameworks & CDN Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Embedded JSON-LD LegalService Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "P. P. SHINDE & ASSOCIATES",
+    "telephone": "+919820000000",
+    "email": "info@ppshinde.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Chamber 102, High Court Complex",
+      "addressLocality": "Mumbai",
+      "addressRegion": "MH",
+      "postalCode": "400001",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+
+  <!-- Embedded Stylesheet -->
+  <style>
+    /* ==========================================================================
+       P. P. SHINDE & ASSOCIATES - Core Stylesheet (Light & Dark Mode)
+       ========================================================================== */
+
+    :root {
+      --primary-navy: #0B192C;
+      --secondary-navy: #1E3E62;
+      --accent-gold: #C5A880;
+      --accent-gold-hover: #B08E5D;
+      --bg-main: #FFFFFF;
+      --bg-subtle: #F8F9FA;
+      --bg-card: #FFFFFF;
+      --text-main: #212529;
+      --text-muted: #6C757D;
+      --border-color: #E0E0E0;
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --transition-fast: all 0.3s ease;
+    }
+
+    [data-theme="dark"] {
+      --primary-navy: #060E1A;
+      --secondary-navy: #112236;
+      --bg-main: #0F172A;
+      --bg-subtle: #1E293B;
+      --bg-card: #1E293B;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --border-color: #334155;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-main);
+      background-color: var(--bg-main);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    .font-serif { font-family: var(--font-heading); }
+    .text-gold { color: var(--accent-gold) !important; }
+    .bg-navy { background-color: var(--primary-navy) !important; }
+    .bg-subtle-custom { background-color: var(--bg-subtle) !important; }
+
+    /* Preloader */
+    #preloader {
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      background-color: var(--primary-navy);
+      z-index: 99999;
+      display: flex; justify-content: center; align-items: center;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    .spinner {
+      width: 50px; height: 50px;
+      border: 4px solid rgba(197, 168, 128, 0.2);
+      border-top: 4px solid var(--accent-gold);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+
+    /* Header & Top Bar */
+    .top-bar {
+      background-color: var(--primary-navy);
+      color: #CCCCCC;
+      font-size: 0.85rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .top-bar a { color: #CCCCCC; text-decoration: none; }
+    .top-bar a:hover { color: var(--accent-gold); }
+
+    .navbar {
+      background-color: var(--bg-main);
+      border-bottom: 1px solid var(--border-color);
+      transition: var(--transition-fast);
+    }
+    .navbar.scrolling-navbar {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand .brand-title {
+      font-family: var(--font-heading);
+      font-size: 1.35rem; font-weight: 800;
+      color: var(--text-main);
+    }
+    .navbar-brand .brand-sub {
+      font-size: 0.7rem; color: var(--accent-gold);
+      letter-spacing: 1.5px; text-transform: uppercase; display: block;
+    }
+    .nav-link {
+      font-weight: 500; color: var(--text-main) !important;
+      transition: var(--transition-fast);
+    }
+    .nav-link:hover, .nav-link.active { color: var(--accent-gold) !important; }
+
+    /* Buttons */
+    .btn-gold {
+      background-color: var(--accent-gold);
+      color: #0B192C; font-weight: 600;
+      border: 1px solid var(--accent-gold);
+      transition: var(--transition-fast);
+    }
+    .btn-gold:hover {
+      background-color: var(--accent-gold-hover);
+      color: #FFFFFF;
+    }
+
+    /* Section Cards */
+    .practice-card {
+      background: var(--bg-card);
+      padding: 2.25rem 1.75rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      transition: var(--transition-fast);
+      height: 100%;
+    }
+    .practice-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      border-color: var(--accent-gold);
+    }
+    .practice-icon { font-size: 2.25rem; color: var(--accent-gold); margin-bottom: 1rem; }
+
+    /* Floating Utilities */
+    .floating-btn-group {
+      position: fixed; bottom: 25px; right: 25px;
+      z-index: 999; display: flex; flex-direction: column; gap: 10px;
+    }
+    .floating-btn {
+      width: 48px; height: 48px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 1.3rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      text-decoration: none; transition: var(--transition-fast); border: none;
+    }
+    .floating-whatsapp { background-color: #25D366; }
+    .floating-whatsapp:hover { color: white; transform: scale(1.1); }
+    .floating-scroll-top {
+      background-color: var(--primary-navy); border: 1px solid var(--accent-gold);
+      opacity: 0; visibility: hidden;
+    }
+    .floating-scroll-top.show { opacity: 1; visibility: visible; }
+
+    /* AI Legal Chatbot Widget */
+    .chat-widget {
+      position: fixed; bottom: 85px; right: 25px; width: 340px;
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      z-index: 1000; display: none; flex-direction: column; overflow: hidden;
+    }
+    .chat-widget.active { display: flex; }
+    .chat-header {
+      background: var(--primary-navy); color: white;
+      padding: 12px 16px; display: flex; justify-content: space-between; align-items: center;
+    }
+    .chat-body {
+      height: 280px; padding: 12px; overflow-y: auto; display: flex;
+      flex-direction: column; gap: 8px; font-size: 0.875rem;
+    }
+    .chat-msg { padding: 8px 12px; border-radius: 8px; max-width: 85%; }
+    .chat-msg.bot { background: var(--bg-subtle); align-self: flex-start; color: var(--text-main); }
+    .chat-msg.user { background: var(--accent-gold); color: var(--primary-navy); align-self: flex-end; font-weight: 500; }
+    .chat-footer { padding: 8px; border-top: 1px solid var(--border-color); display: flex; gap: 6px; }
+
+    /* Footer Styles */
+    .footer {
+      background-color: var(--primary-navy);
+      color: #B0B0B0; font-size: 0.9rem;
+      border-top: 3px solid var(--accent-gold);
+    }
+    .footer h5 { color: #FFFFFF; margin-bottom: 1.25rem; }
+    .footer a { color: #B0B0B0; text-decoration: none; }
+    .footer a:hover { color: var(--accent-gold); }
+  </style>
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader"><div class="spinner"></div></div>
+
+  <!-- Top Contact & Toolbar -->
+  <div class="top-bar py-2 d-none d-lg-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <span class="me-3"><i class="fa-solid fa-phone text-gold me-2"></i><a href="tel:+919820000000">+91 98200 00000</a></span>
+        <span><i class="fa-solid fa-envelope text-gold me-2"></i><a href="mailto:info@ppshinde.com">info@ppshinde.com</a></span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <!-- Language Switcher -->
+        <select id="langSelect" class="form-select form-select-sm bg-dark text-white border-secondary" aria-label="Select Language">
+          <option value="en">🇮🇳 English</option>
+          <option value="hi">🇮🇳 हिंदी</option>
+          <option value="mr">🇮🇳 मराठी</option>
+        </select>
+        <!-- Dark/Light Mode Button -->
+        <button id="themeToggle" class="btn btn-sm btn-outline-light" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-title" data-i18n="nav.brand">P. P. SHINDE & ASSOCIATES</span>
+        <span class="brand-sub" data-i18n="nav.sub">Advocates & Legal Consultants</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services" data-i18n="nav.services">Practice Areas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team" data-i18n="nav.team">Our Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog" data-i18n="nav.blog">Legal Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-gold btn-sm px-3" href="#contact" data-i18n="nav.cta">Free Consultation</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section text-white position-relative py-5" style="background: linear-gradient(rgba(11,25,44,0.88), rgba(11,25,44,0.88)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1920&q=80') center/cover; min-height: 80vh; display: flex; align-items: center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8" data-aos="fade-right">
+          <span class="text-gold fw-bold text-uppercase tracking-wider" data-i18n="hero.subtitle">Excellence in Legal Advocacy</span>
+          <h1 class="display-4 font-serif text-white mt-2 mb-3" data-i18n="hero.title">Trusted Legal Solutions with Integrity & Experience</h1>
+          <p class="lead text-light mb-4" data-i18n="hero.desc">Providing strategic legal representation, comprehensive counsel, and reliable defense in Indian Courts for over 25 years.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#contact" class="btn btn-gold btn-lg" data-i18n="hero.btn_book">Book Consultation</a>
+            <a href="tel:+919820000000" class="btn btn-outline-light btn-lg" data-i18n="hero.btn_call">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice Areas Section -->
+  <section id="services" class="py-5 bg-subtle-custom">
+    <div class="container py-4">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="text-gold fw-bold text-uppercase" data-i18n="practice.subtitle">Specialized Expertise</span>
+        <h2 class="font-serif mt-1" data-i18n="practice.title">Our Practice Areas</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="practice-card">
+            <i class="fa-solid fa-scale-balanced practice-icon"></i>
+            <h4 data-i18n="practice.civil_title">Civil Law</h4>
+            <p class="text-muted" data-i18n="practice.civil_desc">Property suits, injunctions, contract disputes, and recovery litigation.</p>
+            <a href="#contact" class="text-gold fw-semibold text-decoration-none" data-i18n="practice.learn_more">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="practice-card">
+            <i class="fa-solid fa-gavel practice-icon"></i>
+            <h4 data-i18n="practice.crim_title">Criminal Defense</h4>
+            <p class="text-muted" data-i18n="practice.crim_desc">Bail applications, trial defense, FIR quashing, and economic offenses.</p>
+            <a href="#contact" class="text-gold fw-semibold text-decoration-none" data-i18n="practice.learn_more">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="practice-card">
+            <i class="fa-solid fa-building-columns practice-icon"></i>
+            <h4 data-i18n="practice.prop_title">Property & RERA</h4>
+            <p class="text-muted" data-i18n="practice.prop_desc">Title verification, developer disputes, partition, and land acquisition.</p>
+            <a href="#contact" class="text-gold fw-semibold text-decoration-none" data-i18n="practice.learn_more">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="practice-card">
+            <i class="fa-solid fa-people-roof practice-icon"></i>
+            <h4 data-i18n="practice.fam_title">Family Law</h4>
+            <p class="text-muted" data-i18n="practice.fam_desc">Divorce proceedings, child custody, alimony, and estate succession.</p>
+            <a href="#contact" class="text-gold fw-semibold text-decoration-none" data-i18n="practice.learn_more">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="practice-card">
+            <i class="fa-solid fa-briefcase practice-icon"></i>
+            <h4 data-i18n="practice.corp_title">Corporate Law</h4>
+            <p class="text-muted" data-i18n="practice.corp_desc">Contract drafting, compliance, commercial arbitration, and business disputes.</p>
+            <a href="#contact" class="text-gold fw-semibold text-decoration-none" data-i18n="practice.learn_more">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="practice-card">
+            <i class="fa-solid fa-file-signature practice-icon"></i>
+            <h4 data-i18n="practice.doc_title">Legal Documentation</h4>
+            <p class="text-muted" data-i18n="practice.doc_desc">Deed drafting, MOUs, Power of Attorney, and formal legal notices.</p>
+            <a href="#contact" class="text-gold fw-semibold text-decoration-none" data-i18n="practice.learn_more">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Statistics Banner -->
+  <section class="py-5 bg-navy text-white text-center">
+    <div class="container py-3">
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <h2 class="text-gold display-5 font-serif mb-0"><span class="counter-value" data-target="25">0</span>+</h2>
+          <p class="text-white-50 mb-0" data-i18n="stat.exp">Years Experience</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="text-gold display-5 font-serif mb-0"><span class="counter-value" data-target="1500">0</span>+</h2>
+          <p class="text-white-50 mb-0" data-i18n="stat.cases">Cases Handled</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="text-gold display-5 font-serif mb-0"><span class="counter-value" data-target="98">0</span>%</h2>
+          <p class="text-white-50 mb-0" data-i18n="stat.sat">Client Satisfaction</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="text-gold display-5 font-serif mb-0"><span class="counter-value" data-target="12">0</span></h2>
+          <p class="text-white-50 mb-0" data-i18n="stat.lawyers">Expert Advocates</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal News / Blog Section -->
+  <section id="blog" class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="text-gold fw-bold text-uppercase" data-i18n="nav.blog">Legal Updates</span>
+        <h2 class="font-serif mt-1">Latest Articles & Insights</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="card h-100 border p-3 bg-card">
+            <h5 class="font-serif">Understanding Builder Delays & RERA Remedies</h5>
+            <p class="text-muted small">Published: 2026 | Property Law</p>
+            <p>Key legal options available for homebuyers facing project delays, interest compensation claims, and builder accountability before RERA authorities.</p>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 border p-3 bg-card">
+            <h5 class="font-serif">Key Aspects of Commercial Arbitration in India</h5>
+            <p class="text-muted small">Published: 2026 | Corporate Law</p>
+            <p>An overview of recent statutory amendments promoting fast-track dispute resolution and court enforcement of arbitral awards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Consultation Booking Form -->
+  <section id="contact" class="py-5 bg-subtle-custom">
+    <div class="container py-4">
+      <div class="row g-5">
+        <div class="col-lg-7" data-aos="fade-right">
+          <div class="p-4 rounded border bg-card">
+            <h3 class="font-serif mb-4" data-i18n="hero.btn_book">Book Consultation</h3>
+            <form id="contactForm" onsubmit="event.preventDefault(); alert(translations[document.documentElement.lang]['form.success']);">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" data-i18n="form.name">Full Name</label>
+                  <input type="text" class="form-control" required placeholder="John Doe">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" data-i18n="form.phone">Phone Number</label>
+                  <input type="tel" class="form-control" required placeholder="+91 9876543210">
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label fw-semibold" data-i18n="form.email">Email Address</label>
+                  <input type="email" class="form-control" required placeholder="john@example.com">
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label fw-semibold" data-i18n="form.upload">Upload Case Documents (PDF/Doc)</label>
+                  <input type="file" class="form-control" accept=".pdf,.doc,.docx">
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label fw-semibold" data-i18n="form.message">Brief Case Summary</label>
+                  <textarea class="form-control" rows="4" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-gold w-100 py-3" data-i18n="form.submit">Submit Request</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-5" data-aos="fade-left">
+          <h3 class="font-serif mb-4" data-i18n="footer.contact">Contact Us</h3>
+          <p class="mb-3"><i class="fa-solid fa-location-dot text-gold me-2 fs-5"></i> Chamber 102, High Court Complex, Fort, Mumbai, Maharashtra 400001</p>
+          <p class="mb-3"><i class="fa-solid fa-phone text-gold me-2 fs-5"></i> +91 98200 00000</p>
+          <p class="mb-4"><i class="fa-solid fa-envelope text-gold me-2 fs-5"></i> info@ppshinde.com</p>
+          <!-- Google Maps Embed Placeholder -->
+          <div class="ratio ratio-16x9 rounded border">
+            <iframe src="https://maps.google.com/maps?q=High%20Court%20Mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed" title="Google Map Office Location" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer pt-5">
+    <div class="container pb-4">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="text-gold" data-i18n="nav.brand">P. P. SHINDE & ASSOCIATES</h5>
+          <p data-i18n="footer.desc">A trusted full-service law firm providing representation across District Courts, High Courts, and Statutory Tribunals in India.</p>
+        </div>
+        <div class="col-lg-4">
+          <h5 data-i18n="footer.links">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#about" data-i18n="nav.about">About Us</a></li>
+            <li><a href="#services" data-i18n="nav.services">Practice Areas</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 data-i18n="footer.contact">Contact Us</h5>
+          <p class="mb-1"><i class="fa-solid fa-location-dot text-gold me-2"></i>High Court Complex, Mumbai, MH - 400001</p>
+          <p class="mb-1"><i class="fa-solid fa-phone text-gold me-2"></i>+91 98200 00000</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-3 border-top border-secondary text-white-50 fs-7">
+      <div class="container"><p class="mb-0" data-i18n="footer.rights">&copy; 2026 P. P. SHINDE & ASSOCIATES. All Rights Reserved.</p></div>
+    </div>
+  </footer>
+
+  <!-- AI Legal Assistant Widget -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-header">
+      <span class="fw-bold" data-i18n="chat.title"><i class="fa-solid fa-robot text-gold me-2"></i>AI Legal Assistant</span>
+      <button class="btn-close btn-close-white" id="chatClose" aria-label="Close Chat"></button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-msg bot" data-i18n="chat.welcome">Namaste! How can I assist you with your legal query today?</div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="chatInput" class="form-control form-control-sm" placeholder="Type your legal question...">
+      <button class="btn btn-gold btn-sm" id="chatSend" aria-label="Send Message"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <!-- Floating Utility Buttons -->
+  <div class="floating-btn-group">
+    <button class="floating-btn bg-navy text-gold border-gold" id="chatToggle" title="AI Legal Chatbot">
+      <i class="fa-solid fa-comments"></i>
+    </button>
+    <a href="https://wa.me/919820000000" target="_blank" class="floating-btn floating-whatsapp" title="WhatsApp Chat" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <button class="floating-btn floating-scroll-top" id="scrollTopBtn" title="Scroll to Top" aria-label="Scroll to Top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+  </div>
+
+  <!-- Framework Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Integrated JavaScript (Translations & Functionality) -->
+  <script>
+    /**
+     * Multilingual Dictionary (English, Hindi, Marathi)
+     */
+    const translations = {
+      en: {
+        "nav.brand": "P. P. SHINDE & ASSOCIATES",
+        "nav.sub": "Advocates & Legal Consultants",
+        "nav.home": "Home",
+        "nav.about": "About Us",
+        "nav.services": "Practice Areas",
+        "nav.team": "Our Team",
+        "nav.blog": "Legal Updates",
+        "nav.contact": "Contact",
+        "nav.cta": "Free Consultation",
+
+        "hero.subtitle": "Excellence in Legal Advocacy",
+        "hero.title": "Trusted Legal Solutions with Integrity & Experience",
+        "hero.desc": "Providing strategic legal representation, comprehensive counsel, and reliable defense in Indian Courts for over 25 years.",
+        "hero.btn_book": "Book Consultation",
+        "hero.btn_call": "Call Now",
+
+        "practice.subtitle": "Specialized Expertise",
+        "practice.title": "Our Practice Areas",
+        "practice.civil_title": "Civil Law",
+        "practice.civil_desc": "Property suits, injunctions, contract disputes, and recovery litigation.",
+        "practice.crim_title": "Criminal Defense",
+        "practice.crim_desc": "Bail applications, trial defense, FIR quashing, and economic offenses.",
+        "practice.prop_title": "Property & RERA",
+        "practice.prop_desc": "Title verification, developer disputes, partition, and land acquisition.",
+        "practice.fam_title": "Family Law",
+        "practice.fam_desc": "Divorce proceedings, child custody, alimony, and estate succession.",
+        "practice.corp_title": "Corporate Law",
+        "practice.corp_desc": "Contract drafting, compliance, commercial arbitration, and business disputes.",
+        "practice.doc_title": "Legal Documentation",
+        "practice.doc_desc": "Deed drafting, MOUs, Power of Attorney, and formal legal notices.",
+        "practice.learn_more": "Learn More",
+
+        "stat.exp": "Years Experience",
+        "stat.cases": "Cases Handled",
+        "stat.sat": "Client Satisfaction",
+        "stat.lawyers": "Expert Advocates",
+
+        "chat.title": "AI Legal Assistant",
+        "chat.welcome": "Namaste! How can I assist you with your legal query today?",
+        "chat.placeholder": "Type your legal question...",
+
+        "form.name": "Full Name",
+        "form.phone": "Phone Number",
+        "form.email": "Email Address",
+        "form.upload": "Upload Case Documents (PDF/Doc)",
+        "form.message": "Brief Case Summary",
+        "form.submit": "Submit Request",
+        "form.success": "Thank you! Your enquiry has been received. We will contact you shortly.",
+
+        "footer.desc": "A trusted full-service law firm providing representation across District Courts, High Courts, and Statutory Tribunals in India.",
+        "footer.links": "Quick Links",
+        "footer.contact": "Contact Us",
+        "footer.rights": "All Rights Reserved. Bar Council Disclaimer: This website is for informational purposes only."
+      },
+      hi: {
+        "nav.brand": "पी. पी. शिंदे एंड एसोसिएट्स",
+        "nav.sub": "अधिवक्ता एवं कानूनी सलाहकार",
+        "nav.home": "मुख्य पृष्ठ",
+        "nav.about": "हमारे बारे में",
+        "nav.services": "कार्य क्षेत्र",
+        "nav.team": "हमारी टीम",
+        "nav.blog": "कानूनी समाचार",
+        "nav.contact": "संपर्क करें",
+        "nav.cta": "निःशुल्क परामर्श",
+
+        "hero.subtitle": "कानूनी वकालत में उत्कृष्टता",
+        "hero.title": "सत्यनिष्ठा और अनुभव के साथ विश्वसनीय कानूनी समाधान",
+        "hero.desc": "भारतीय न्यायालयों में 25 से अधिक वर्षों से रणनीतिक प्रतिनिधित्व और विश्वसनीय कानूनी समाधान प्रदान करना।",
+        "hero.btn_book": "परामर्श बुक करें",
+        "hero.btn_call": "अभी कॉल करें",
+
+        "practice.subtitle": "विशेषज्ञता क्षेत्र",
+        "practice.title": "हमारे प्रमुख कार्य क्षेत्र",
+        "practice.civil_title": "नागरिक कानून (सिविल)",
+        "practice.civil_desc": "संपत्ति विवाद, अनुबंध, सिविल वाद और कानूनी रिकवरी।",
+        "practice.crim_title": "आपराधिक रक्षा (क्रिमिनल)",
+        "practice.crim_desc": "जमानत याचिकाएं, ट्रायल डिफेंस, एफआईआर और आर्थिक अपराध।",
+        "practice.prop_title": "संपत्ति एवं रेरा (RERA)",
+        "practice.prop_desc": "टाइटल जांच, बिल्डर विवाद, बटवारा और भूमि अधिग्रहण।",
+        "practice.fam_title": "पारिवारिक कानून",
+        "practice.fam_desc": "विवाह विच्छेद, बच्चे की कस्टडी, भरण-पोषण और वसीयत।",
+        "practice.corp_title": "कॉरपोरेट कानून",
+        "practice.corp_desc": "अनुबंध प्रारूपण, वाणिज्यिक मध्यस्थता और व्यापारिक विवाद।",
+        "practice.doc_title": "कानूनी दस्तावेज",
+        "practice.doc_desc": "पावर ऑफ अटॉर्नी, डीड ड्राफ्टिंग और कानूनी नोटिस।",
+        "practice.learn_more": "और जानें",
+
+        "stat.exp": "वर्षों का अनुभव",
+        "stat.cases": "हल किए गए मामले",
+        "stat.sat": "ग्राहक संतुष्टि",
+        "stat.lawyers": "विशेषज्ञ अधिवक्ता",
+
+        "chat.title": "एआई कानूनी सहायक",
+        "chat.welcome": "नमस्ते! आज मैं आपके कानूनी प्रश्नों में क्या सहायता कर सकता हूँ?",
+        "chat.placeholder": "अपना प्रश्न यहाँ लिखें...",
+
+        "form.name": "पूरा नाम",
+        "form.phone": "फोन नंबर",
+        "form.email": "ईमेल पता",
+        "form.upload": "दस्तावेज़ अपलोड करें (PDF/Doc)",
+        "form.message": "मामले का संक्षिप्त विवरण",
+        "form.submit": "आवेदन भेजें",
+        "form.success": "धन्यवाद! आपका संदेश प्राप्त हो गया है। हम जल्द ही संपर्क करेंगे।",
+
+        "footer.desc": "जिला न्यायालयों, उच्च न्यायालयों और ट्रिब्यूनल में विश्वसनीय कानूनी सेवाएं प्रदान करने वाली संस्था।",
+        "footer.links": "त्वरित लिंक्स",
+        "footer.contact": "संपर्क करें",
+        "footer.rights": "सर्वाधिकार सुरक्षित। बार काउंसिल अस्वीकरण: यह वेबसाइट केवल सूचनात्मक उद्देश्यों के लिए है।"
+      },
+      mr: {
+        "nav.brand": "पी. पी. शिंदे अँड असोसिएट",
+        "nav.sub": "अ‍ॅडव्होकेट्स आणि कायदेशीर सल्लागार",
+        "nav.home": "मुख्य पृष्ठ",
+        "nav.about": "आमच्याबद्दल",
+        "nav.services": "कायदेविषयक सेवा",
+        "nav.team": "आमची टीम",
+        "nav.blog": "कायदेशीर घडामोडी",
+        "nav.contact": "संपर्क",
+        "nav.cta": "मोफत सल्ला",
+
+        "hero.subtitle": "कायदेविषयक सेवेतील उच्च दर्जा",
+        "hero.title": "विश्वास, सचोटी आणि प्रदीर्घ अनुभवातून कायदेशीर मार्गदर्शन",
+        "hero.desc": "भारतीय न्यायालयांमध्ये २५ हून अधिक वर्षांचा अनुभव आणि विश्वासार्ह कायदेशीर प्रतिनिधित्व.",
+        "hero.btn_book": "सल्लामसलत बुक करा",
+        "hero.btn_call": "आत्ताच कॉल करा",
+
+        "practice.subtitle": "विशेष नैपुण्य",
+        "practice.title": "आमची प्रमुख कार्यक्षेत्रे",
+        "practice.civil_title": "दिवाणी कायदे (Civil Law)",
+        "practice.civil_desc": "मालमत्ता वाद, करारभंग, मनाईहुकूम आणि वसुली दावे.",
+        "practice.crim_title": "फौजदारी कायदे (Criminal Law)",
+        "practice.crim_desc": "जामीन अर्ज, फौजदारी खटले, एफआयआर रद्द करणे आणि आर्थिक गुन्हे.",
+        "practice.prop_title": "मालमत्ता व रेरा (RERA)",
+        "practice.prop_desc": "टायटल सर्च, बिल्डर विवाद, वाटणी पत्रे आणि रेरा दावे.",
+        "practice.fam_title": "कौटुंबिक कायदे",
+        "practice.fam_desc": "घटस्फोट दावे, बालका ताबा, पोटगी आणि वारसा हक्क.",
+        "practice.corp_title": "कॉर्पोरेट कायदे",
+        "practice.corp_desc": "व्यावसायिक करार, कंपनी कायदे सल्ला आणि लवाद प्रकरणे.",
+        "practice.doc_title": "कायदेशीर दस्तऐवजीकरण",
+        "practice.doc_desc": "कुलमुखत्यारपत्र, खरेदीखत, करारांचे मसुदे आणि कायदेशीर नोटीस.",
+        "practice.learn_more": "अधिक माहिती",
+
+        "stat.exp": "वर्षांचा अनुभव",
+        "stat.cases": "यशस्वी प्रकरणे",
+        "stat.sat": "समाधानी पक्षकार",
+        "stat.lawyers": "तज्ज्ञ वकील",
+
+        "chat.title": "एआई कायदेशीर सहाय्यक",
+        "chat.welcome": "नमस्कार! आज मी तुम्हाला कायदेशीर बाबींमध्ये कशी मदत करू शकेन?",
+        "chat.placeholder": "तुमचा प्रश्न येथे टाईप करा...",
+
+        "form.name": "पूर्ण नाव",
+        "form.phone": "फोन नंबर",
+        "form.email": "ईमेल पत्ता",
+        "form.upload": "कागदपत्रे अपलोड करा (PDF/Doc)",
+        "form.message": "प्रकरणाची थोडक्यात माहिती",
+        "form.submit": "अर्ज पाठवा",
+        "form.success": "धन्यवाद! तुमची माहिती आम्हाला मिळाली आहे. आम्ही लवकरच संपर्क करू.",
+
+        "footer.desc": "जिल्हा न्यायालये, उच्च न्यायालय आणि न्यायाधिकरणांमध्ये प्रभावी कायदेशीर प्रतिनिधित्व देणारी संस्था.",
+        "footer.links": "महत्वाच्या लिंक्स",
+        "footer.contact": "संपर्क",
+        "footer.rights": "सर्व हक्क सुरक्षित. बार कौन्सिल नियमानुसार: ही वेबसाइट केवळ माहितीसाठी आहे."
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Preloader Hide
+      const preloader = document.getElementById("preloader");
+      if (preloader) {
+        window.addEventListener("load", () => {
+          preloader.style.opacity = "0";
+          setTimeout(() => (preloader.style.display = "none"), 500);
+        });
+      }
+
+      // 2. AOS Animations Initializer
+      if (typeof AOS !== "undefined") {
+        AOS.init({ duration: 800, once: true });
+      }
+
+      // 3. Language Switcher Engine
+      const langSelect = document.getElementById("langSelect");
+      let currentLang = localStorage.getItem("app_lang") || "en";
+
+      function setLanguage(lang) {
+        if (!translations[lang]) lang = "en";
+        currentLang = lang;
+        localStorage.setItem("app_lang", lang);
+        if (langSelect) langSelect.value = lang;
+
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.getAttribute("data-i18n");
+          if (translations[lang][key]) {
+            if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
+              element.placeholder = translations[lang][key];
+            } else {
+              element.innerText = translations[lang][key];
+            }
+          }
+        });
+        document.documentElement.lang = lang;
+      }
+
+      if (langSelect) {
+        langSelect.addEventListener("change", (e) => setLanguage(e.target.value));
+      }
+      setLanguage(currentLang);
+
+      // 4. Dark/Light Theme Switcher
+      const themeToggleBtn = document.getElementById("themeToggle");
+      const storedTheme = localStorage.getItem("app_theme") || "light";
+
+      function setTheme(theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("app_theme", theme);
+        if (themeToggleBtn) {
+          themeToggleBtn.innerHTML = theme === "dark" 
+            ? '<i class="fa-solid fa-sun text-gold"></i>' 
+            : '<i class="fa-solid fa-moon"></i>';
+        }
+      }
+
+      if (themeToggleBtn) {
+        themeToggleBtn.addEventListener("click", () => {
+          const activeTheme = document.documentElement.getAttribute("data-theme");
+          setTheme(activeTheme === "dark" ? "light" : "dark");
+        });
+      }
+      setTheme(storedTheme);
+
+      // 5. Sticky Navbar & Scroll Top
+      const navbar = document.querySelector(".navbar");
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) navbar?.classList.add("scrolling-navbar");
+        else navbar?.classList.remove("scrolling-navbar");
+
+        if (scrollTopBtn) {
+          if (window.scrollY > 300) scrollTopBtn.classList.add("show");
+          else scrollTopBtn.classList.remove("show");
+        }
+      });
+
+      scrollTopBtn?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+      // 6. AI Legal Chatbot Handler
+      const chatToggle = document.getElementById("chatToggle");
+      const chatWidget = document.getElementById("chatWidget");
+      const chatClose = document.getElementById("chatClose");
+      const chatInput = document.getElementById("chatInput");
+      const chatSend = document.getElementById("chatSend");
+      const chatBody = document.getElementById("chatBody");
+
+      if (chatToggle && chatWidget) {
+        chatToggle.addEventListener("click", () => chatWidget.classList.toggle("active"));
+        chatClose?.addEventListener("click", () => chatWidget.classList.remove("active"));
+
+        const handleChat = () => {
+          const query = chatInput.value.trim().toLowerCase();
+          if (!query) return;
+
+          appendMsg(chatInput.value, "user");
+          chatInput.value = "";
+
+          setTimeout(() => {
+            let reply = "Thank you for reaching out. For specific legal guidance, please book a consultation with our senior advocates.";
+            if (query.includes("property") || query.includes("rera") || query.includes("जमीन")) {
+              reply = "We specialize in Property & RERA laws, including title due diligence, partition suits, and builder disputes.";
+            } else if (query.includes("bail") || query.includes("criminal") || query.includes("बेल")) {
+              reply = "Our Criminal Defense team handles regular and anticipatory bail applications across High Courts and Sessions Courts.";
+            } else if (query.includes("fee") || query.includes("fees") || query.includes("फीस")) {
+              reply = "Consultation fees vary depending on the nature of the matter. You can request a preliminary case review via our contact form.";
+            }
+            appendMsg(reply, "bot");
+          }, 600);
+        };
+
+        chatSend?.addEventListener("click", handleChat);
+        chatInput?.addEventListener("keypress", (e) => {
+          if (e.key === "Enter") handleChat();
+        });
+      }
+
+      function appendMsg(text, sender) {
+        const msgDiv = document.createElement("div");
+        msgDiv.className = `chat-msg ${sender}`;
+        msgDiv.innerText = text;
+        chatBody.appendChild(msgDiv);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+
+      // 7. Dynamic Animated Counters
+      const counters = document.querySelectorAll(".counter-value");
+      if (counters.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const target = +entry.target.getAttribute("data-target");
+              let count = 0;
+              const inc = target / 100;
+              const update = () => {
+                count += inc;
+                if (count < target) {
+                  entry.target.innerText = Math.ceil(count);
+                  setTimeout(update, 20);
+                } else {
+                  entry.target.innerText = target;
+                }
+              };
+              update();
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach((c) => observer.observe(c));
+      }
+    });
+  </script>
+</body>
+</html>

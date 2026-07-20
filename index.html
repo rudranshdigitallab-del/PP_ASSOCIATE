@@ -1,194 +1,275 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Primary Meta Tags -->
-  <title>P. P. SHINDE & ASSOCIATE | Advocates & Legal Consultants in Maharashtra</title>
-  <meta name="title" content="P. P. SHINDE & ASSOCIATE | Advocates & Legal Consultants">
-  <meta name="description" content="Premier law firm in Maharashtra providing expert legal counsel in Civil, Criminal, Family, Property, and Corporate Law across English, Hindi, and Marathi.">
-  <meta name="keywords" content="Advocates, Legal Consultants, Maharashtra Law Firm, Civil Law, Criminal Defense, Property Lawyer, RERA Advocates">
-  <meta name="author" content="P. P. SHINDE & ASSOCIATE">
+  <title>P. P. SHINDE & ASSOCIATES | High Court Advocates & Legal Consultants</title>
+  <meta name="title" content="P. P. SHINDE & ASSOCIATES | Premier Advocates & Legal Counsel">
+  <meta name="description" content="Executive legal counsel in Mumbai Metropolitan Region specializing in RERA, Property Law, Civil Litigation, Criminal Defense, and Corporate Disputes.">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.ppshindeassociates.com/">
-  <meta property="og:title" content="P. P. SHINDE & ASSOCIATE | Advocates & Legal Consultants">
-  <meta property="og:description" content="Trusted legal excellence in Civil, Criminal, Family, Property, and Corporate Law. Consultation in EN | HI | MR.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80">
-
-  <!-- Schema.org LegalService Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "P. P. SHINDE & ASSOCIATE",
-    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80",
-    "@id": "https://www.ppshindeassociates.com/#legalservice",
-    "url": "https://www.ppshindeassociates.com/",
-    "telephone": "+919820000000",
-    "priceRange": "₹₹₹",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Suite 402, Judicial Chambers, Near High Court",
-      "addressLocality": "Mumbai",
-      "addressRegion": "MH",
-      "postalCode": "400001",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 18.9281,
-      "longitude": 72.8318
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "09:30",
-      "closes": "19:30"
-    },
-    "knowsLanguage": ["en", "hi", "mr"]
-  }
-  </script>
-
-  <!-- CSS CDN Imports -->
+  <!-- Font & Icon Assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
   <style>
-    /* Custom Design Tokens */
     :root {
-      --bs-primary: #1e3a8a; /* Deep Legal Navy */
-      --bs-primary-rgb: 30, 58, 138;
-      --bs-warning: #d97706; /* Judicial Gold */
-      --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    }
-
-    [data-bs-theme="dark"] {
-      --bs-primary: #3b82f6;
-      --bs-primary-rgb: 59, 130, 246;
+      --font-heading: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --gold-primary: #D4AF37;
+      --gold-light: #F3E5AB;
+      --gold-dark: #AA7C11;
+      --bg-dark-lux: #080C16;
+      --card-bg-dark: rgba(255, 255, 255, 0.03);
+      --card-border-dark: rgba(212, 175, 55, 0.25);
+      --whatsapp-green: #25D366;
     }
 
     body {
-      font-family: var(--bs-font-sans-serif);
-      transition: background-color 0.3s ease, color 0.3s ease;
-      scroll-behavior: smooth;
+      font-family: var(--font-body);
+      background-color: var(--bg-dark-lux);
+      color: #E2E8F0;
+      overflow-x: hidden;
     }
 
-    .fs-7 { font-size: 0.85rem; }
-    .fs-8 { font-size: 0.75rem; }
-    .max-w-700 { max-width: 700px; }
-    .max-w-85 { max-width: 85%; }
-    .cursor-pointer { cursor: pointer; }
-
-    .hover-card {
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
-    }
-    .hover-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 1rem 3rem rgba(0,0,0,.125) !important;
+    h1, h2, h3, .font-heading {
+      font-family: var(--font-heading);
+      letter-spacing: -0.01em;
     }
 
-    .hover-white:hover {
-      color: #ffffff !important;
+    .text-gold { color: var(--gold-primary) !important; }
+    .bg-gold { background-color: var(--gold-primary) !important; color: #000 !important; }
+    
+    /* Glassmorphism Header */
+    .glass-header {
+      background: rgba(8, 12, 22, 0.82);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.15);
     }
 
-    .style-lang-group {
-      border: 1px solid rgba(0, 0, 0, 0.15);
-      border-radius: 50rem;
-      padding: 0 4px;
-    }
-    [data-bs-theme="dark"] .style-lang-group {
-      border-color: rgba(255, 255, 255, 0.2);
+    /* Executive Glass Cards */
+    .glass-card {
+      background: var(--card-bg-dark);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border-dark);
+      border-radius: 16px;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .style-floating-utilities button,
-    .style-floating-utilities a {
-      transition: transform 0.2s ease;
+    .glass-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold-primary);
+      box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
     }
-    .style-floating-utilities button:hover,
-    .style-floating-utilities a:hover {
-      transform: scale(1.1);
+
+    /* Founder Frame Styling */
+    .founder-image-wrapper {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--card-border-dark);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    }
+
+    .founder-image-wrapper::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      pointer-events: none;
+    }
+
+    .founder-img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .founder-image-wrapper:hover .founder-img {
+      transform: scale(1.03);
+    }
+
+    /* Gold Gradient Typography */
+    .gradient-text {
+      background: linear-gradient(135deg, #FFFFFF 20%, #D4AF37 80%, #AA7C11 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Luxury Form Control Styles */
+    .form-control-lux, .form-select-lux {
+      background: rgba(255, 255, 255, 0.04) !important;
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      color: #FFF !important;
+      border-radius: 10px;
+      padding: 0.8rem 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .form-control-lux:focus, .form-select-lux:focus {
+      border-color: var(--gold-primary) !important;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.25) !important;
+    }
+
+    /* Executive Luxury Buttons */
+    .btn-lux {
+      background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+      color: #000 !important;
+      font-weight: 700;
+      border: none;
+      border-radius: 50px;
+      padding: 0.85rem 2.2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+    }
+
+    .btn-lux:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5);
+      background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 100%);
+    }
+
+    /* Floating Utilities (WhatsApp & AI Assistant) */
+    .floating-btn-group {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 1080;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .btn-floating {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      text-decoration: none;
+      border: none;
+    }
+
+    .btn-floating:hover {
+      transform: scale(1.12);
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: #FFFFFF !important;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    }
+
+    .btn-whatsapp:hover {
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+    }
+
+    .btn-ai-assistant {
+      background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+      color: #000 !important;
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+    }
+
+    /* AI Chat Offcanvas */
+    .ai-chat-drawer {
+      background: #0B101D !important;
+      border-left: 1px solid var(--card-border-dark) !important;
+    }
+
+    .chat-bubble-user {
+      background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+      color: #000;
+      border-radius: 18px 18px 2px 18px;
+      font-weight: 500;
+    }
+
+    .chat-bubble-ai {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #E2E8F0;
+      border-radius: 18px 18px 18px 2px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Loading Overlay -->
-  <div id="loading-spinner" class="position-fixed top-0 start-0 w-100 h-100 bg-white d-flex justify-content-center align-items-center" style="z-index: 9999; transition: opacity 0.3s ease;">
-    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
-      <span class="visually-hidden">Loading...</span>
-    </div>
-  </div>
-
   <!-- Top Emergency & Quick Contact Bar -->
-  <div class="top-bar py-2 text-white bg-dark border-bottom border-secondary">
-    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
-      <div class="d-flex align-items-center gap-3 fs-7">
-        <span><i class="fa-solid fa-phone text-warning me-1"></i> <a href="tel:+919820000000" class="text-white text-decoration-none">+91 98200 00000</a></span>
-        <span class="d-none d-md-inline"><i class="fa-solid fa-envelope text-warning me-1"></i> contact@ppshindeassociates.com</span>
-        <span class="badge bg-danger ms-2"><i class="fa-solid fa-triangle-exclamation me-1"></i> <span data-i18n="emergency_label">24/7 Legal Emergency</span></span>
+  <div class="py-2 bg-black border-bottom border-secondary border-opacity-25 fs-7">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <span class="text-gold"><i class="fa-solid fa-scale-balanced me-2"></i>High Court Advocates & Legal Consultants</span>
+        <span class="d-none d-md-inline text-muted">|</span>
+        <span class="d-none d-md-inline text-light"><i class="fa-solid fa-phone me-1 text-gold"></i> +91 98200 00000</span>
       </div>
       <div class="d-flex align-items-center gap-3">
-        <div class="theme-toggle cursor-pointer" id="themeToggle" title="Toggle Dark/Light Mode">
-          <i class="fa-solid fa-moon text-warning" id="themeIcon"></i>
-        </div>
-        <div class="social-links-top d-none d-sm-flex gap-2">
-          <a href="#" class="text-white-50 hover-white"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" class="text-white-50 hover-white"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#" class="text-white-50 hover-white"><i class="fa-brands fa-facebook-f"></i></a>
-        </div>
+        <span class="badge bg-danger bg-opacity-20 text-danger border border-danger border-opacity-25 px-3 py-1 rounded-pill">
+          <i class="fa-solid fa-bolt me-1"></i> <span data-i18n="emergency_tag">24/7 Urgent Legal Counsel</span>
+        </span>
       </div>
     </div>
   </div>
 
-  <!-- Main Navigation Header -->
-  <header class="sticky-top bg-body shadow-sm">
-    <nav class="navbar navbar-expand-lg py-2">
+  <!-- Glassmorphic Header Navigation -->
+  <header class="sticky-top glass-header">
+    <nav class="navbar navbar-expand-lg py-3">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
-          <i class="fa-solid fa-scale-balanced fs-2 text-primary"></i>
-          <div class="lh-sm">
-            <span class="fw-bold fs-5 d-block text-body-emphasis" data-i18n="brand_title">P. P. SHINDE & ASSOCIATE</span>
-            <small class="text-muted fs-8 tracking-wider text-uppercase" data-i18n="brand_subtitle">Advocates & Legal Consultants</small>
+        <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+          <div class="p-2 rounded-circle bg-gold d-flex align-items-center justify-content-center" style="width:44px; height:44px;">
+            <i class="fa-solid fa-gavel fs-5"></i>
+          </div>
+          <div>
+            <span class="font-heading fw-bold fs-4 text-white d-block lh-1">P. P. SHINDE & ASSOCIATES</span>
+            <small class="text-gold text-uppercase tracking-wider fs-8 fw-semibold" data-i18n="tagline">Advocates & Legal Consultants</small>
           </div>
         </a>
 
-        <!-- Mobile Language Selector & Toggle -->
+        <!-- Mobile Controls -->
         <div class="d-flex align-items-center gap-2 d-lg-none">
-          <select class="form-select form-select-sm lang-select" aria-label="Language Selector Mobile">
-            <option value="en">🇮🇳 EN</option>
-            <option value="hi">🇮🇳 हिंदी</option>
-            <option value="mr">🇮🇳 मराठी</option>
+          <select class="form-select form-select-sm bg-dark text-white border-secondary lang-select">
+            <option value="en">EN</option>
+            <option value="hi">हिंदी</option>
+            <option value="mr">मराठी</option>
           </select>
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <i class="fa-solid fa-bars fs-3"></i>
           </button>
         </div>
 
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold">
-            <li class="nav-item"><a class="nav-link active" href="#home" data-i18n="nav_home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services" data-i18n="nav_practice">Practice Areas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#team" data-i18n="nav_team">Our Team</a></li>
-            <li class="nav-item"><a class="nav-link" href="#blog" data-i18n="nav_blog">Legal Updates</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a></li>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium">
+            <li class="nav-item"><a class="nav-link text-white px-3" href="#home" data-i18n="nav_home">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50 px-3" href="#about" data-i18n="nav_about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50 px-3" href="#practice" data-i18n="nav_practice">Practice Areas</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50 px-3" href="#contact" data-i18n="nav_contact">Contact</a></li>
           </ul>
 
-          <!-- Desktop Utility & Language Switcher -->
           <div class="d-none d-lg-flex align-items-center gap-3">
-            <div class="input-group input-group-sm style-lang-group">
-              <span class="input-group-text bg-transparent border-0"><i class="fa-solid fa-globe text-primary"></i></span>
-              <select class="form-select form-select-sm border-0 bg-transparent fw-bold lang-select" aria-label="Language Selector Desktop">
+            <!-- Language Selector -->
+            <div class="input-group input-group-sm rounded-pill overflow-hidden border border-secondary border-opacity-50">
+              <span class="input-group-text bg-transparent border-0 text-gold"><i class="fa-solid fa-globe"></i></span>
+              <select class="form-select bg-dark text-white border-0 lang-select cursor-pointer shadow-none">
                 <option value="en">English</option>
                 <option value="hi">हिंदी</option>
                 <option value="mr">मराठी</option>
               </select>
             </div>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal" class="btn btn-primary btn-sm rounded-pill px-3" data-i18n="btn_book_consultation">Book Consultation</button>
+
+            <button class="btn btn-lux btn-sm px-4" data-bs-toggle="modal" data-bs-target="#consultationModal" data-i18n="btn_consult">
+              Book Consult
+            </button>
           </div>
         </div>
       </div>
@@ -196,80 +277,96 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero-section position-relative text-white py-5 d-flex align-items-center" style="min-height: 85vh; background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
-    <div class="container py-5" data-aos="fade-up">
-      <div class="row align-items-center">
-        <div class="col-lg-8">
-          <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-semibold mb-3" data-i18n="hero_badge">Trusted Legal Excellence Since 1998</span>
-          <h1 class="display-3 fw-bold mb-3" data-i18n="hero_title">Unyielding Integrity. Proven Results.</h1>
-          <p class="lead mb-4 text-light opacity-90 max-w-700" data-i18n="hero_subtitle">Providing comprehensive legal services across Civil, Criminal, Corporate, and Family law with full fluency in English, Hindi, and Marathi.</p>
+  <section id="home" class="py-5 position-relative overflow-hidden" style="min-height: 85vh; background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.08), transparent 50%);">
+    <div class="container py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7" data-aos="fade-right">
+          <div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill glass-card mb-4">
+            <span class="badge bg-gold rounded-circle p-1"><i class="fa-solid fa-star"></i></span>
+            <small class="text-gold fw-semibold" data-i18n="hero_badge">25+ Years of Legal Mastery in Maharashtra</small>
+          </div>
+          <h1 class="display-3 fw-bold gradient-text mb-4" data-i18n="hero_title">
+            Relentless Advocacy. Exceptional Precision.
+          </h1>
+          <p class="lead text-light text-opacity-75 mb-5 max-w-700" data-i18n="hero_sub">
+            Strategic counsel in High Court & District Litigation, RERA & Property Disputes, Criminal Defense, and Corporate Arbitration.
+          </p>
           <div class="d-flex flex-wrap gap-3">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal" class="btn btn-primary btn-lg rounded-pill px-4 shadow" data-i18n="btn_book_consultation">Book Consultation</button>
-            <a href="tel:+919820000000" class="btn btn-outline-light btn-lg rounded-pill px-4" data-i18n="btn_call_now">Call Now: +91 98200 00000</a>
+            <button class="btn btn-lux btn-lg" data-bs-toggle="modal" data-bs-target="#consultationModal" data-i18n="btn_schedule">
+              Schedule Private Advisory
+            </button>
+            <a href="https://wa.me/919820000000?text=Hello%20Advocate%20Shinde,%20I%20would%20like%20to%20consult%20regarding%20a%20legal%20matter." target="_blank" rel="noopener noreferrer" class="btn btn-outline-success rounded-pill btn-lg px-4 border-opacity-50">
+              <i class="fa-brands fa-whatsapp me-2 fs-5"></i>WhatsApp Consultation
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="glass-card p-4 position-relative">
+            <h3 class="font-heading text-gold mb-2" data-i18n="quick_inquiry">Quick Legal Inquiry</h3>
+            <p class="text-muted fs-7 mb-4">Submit your case details directly for priority advocate review.</p>
+            <form id="heroQuickForm">
+              <div class="mb-3">
+                <input type="text" class="form-control form-control-lux" placeholder="Full Name" data-i18n="ph_name" required>
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control form-control-lux" placeholder="Phone Number" data-i18n="ph_phone" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control form-control-lux" rows="3" placeholder="Brief details of legal dispute..." data-i18n="ph_details" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-lux w-100" data-i18n="btn_send">Submit Case Review</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Key Statistics Counter Section -->
-  <section class="bg-primary text-white py-4 shadow-sm">
-    <div class="container">
-      <div class="row text-center g-4">
-        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
-          <h2 class="fw-bold mb-0"><span class="counter" data-target="25">0</span>+</h2>
-          <p class="mb-0 fs-7 text-white-50" data-i18n="stat_years">Years Experience</p>
-        </div>
-        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
-          <h2 class="fw-bold mb-0"><span class="counter" data-target="4500">0</span>+</h2>
-          <p class="mb-0 fs-7 text-white-50" data-i18n="stat_cases">Cases Won</p>
-        </div>
-        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
-          <h2 class="fw-bold mb-0"><span class="counter" data-target="98">0</span>%</h2>
-          <p class="mb-0 fs-7 text-white-50" data-i18n="stat_success">Success Rate</p>
-        </div>
-        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="400">
-          <h2 class="fw-bold mb-0"><span class="counter" data-target="15">0</span>+</h2>
-          <p class="mb-0 fs-7 text-white-50" data-i18n="stat_advocates">Expert Advocates</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Us Section -->
-  <section id="about" class="py-5">
+  <!-- About / Founder Profile Section -->
+  <section id="about" class="py-5 border-top border-secondary border-opacity-10" style="background: rgba(255, 255, 255, 0.01);">
     <div class="container py-4">
-      <div class="row align-items-center g-5 mb-5">
-        <div class="col-lg-6" data-aos="fade-right">
-          <h2 class="display-5 fw-bold text-primary mb-3">Our Legacy & Commitment</h2>
-          <p class="lead text-muted">Founded by Advocate P. P. Shinde, P. P. SHINDE & ASSOCIATE has served clients across Maharashtra for over two decades.</p>
-          <p>Our firm specializes in handling complex litigation in Civil, Criminal, Property, and Family law matters with exceptional expertise and ethical commitment.</p>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left">
-          <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-3 shadow" alt="Advocate P. P. Shinde Office">
-        </div>
-      </div>
-      
-      <div class="row g-4 text-center my-4">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="p-4 border rounded-3 bg-body-tertiary">
-            <i class="fa-solid fa-bullseye fs-1 text-primary mb-3"></i>
-            <h4>Our Mission</h4>
-            <p class="text-muted fs-7 mb-0">To deliver ethical, accessible, and high-impact legal representation to individuals and businesses.</p>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="founder-image-wrapper">
+            <!-- Save your uploaded image as founder.jpg inside an 'images' directory -->
+            <img src="images/founder.jpg" alt="Advocate P. P. Shinde - Founder & Principal Advocate" class="founder-img">
+            <div class="position-absolute bottom-0 start-0 end-0 p-4" style="background: linear-gradient(to top, rgba(8,12,22,0.95), transparent);">
+              <h4 class="font-heading text-gold mb-0">Adv. P. P. Shinde</h4>
+              <p class="text-white-50 fs-7 mb-0">Founder & Principal Legal Counsel</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="p-4 border rounded-3 bg-body-tertiary">
-            <i class="fa-solid fa-eye fs-1 text-primary mb-3"></i>
-            <h4>Our Vision</h4>
-            <p class="text-muted fs-7 mb-0">To be Maharashtra's premier legal firm known for integrity and strategic results.</p>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="p-4 border rounded-3 bg-body-tertiary">
-            <i class="fa-solid fa-handshake fs-1 text-primary mb-3"></i>
-            <h4>Our Values</h4>
-            <p class="text-muted fs-7 mb-0">Uncompromising ethics, client confidentiality, and legal excellence.</p>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <h6 class="text-gold fw-bold text-uppercase tracking-wider" data-i18n="about_sub">Leadership Profile</h6>
+          <h2 class="display-5 font-heading text-white mb-4" data-i18n="about_title">Uncompromising Defense & Legal Excellence</h2>
+          <p class="text-light text-opacity-75 mb-4" data-i18n="about_p1">
+            Founded by Advocate P. P. Shinde, <strong>P. P. SHINDE & ASSOCIATES</strong> has built a reputation for formidable courtroom advocacy and sophisticated legal strategy across the Mumbai Metropolitan Region and Maharashtra.
+          </p>
+          <p class="text-light text-opacity-75 mb-4" data-i18n="about_p2">
+            With decades of trial experience across High Courts, District & Sessions Courts, and specialized statutory tribunals such as MahaRERA, the firm provides client-centric, result-driven representation in complex civil, criminal, and real estate litigation.
+          </p>
+          
+          <div class="row g-3 pt-2">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-3 glass-card p-3">
+                <i class="fa-solid fa-gavel fs-3 text-gold"></i>
+                <div>
+                  <h6 class="text-white mb-0">High Court Advocate</h6>
+                  <small class="text-muted">Bombay High Court</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-3 glass-card p-3">
+                <i class="fa-solid fa-award fs-3 text-gold"></i>
+                <div>
+                  <h6 class="text-white mb-0">MahaRERA Expert</h6>
+                  <small class="text-muted">Property & Developer Disputes</small>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -277,275 +374,140 @@
   </section>
 
   <!-- Practice Areas Section -->
-  <section id="services" class="py-5 bg-body-tertiary">
+  <section id="practice" class="py-5">
     <div class="container py-4">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h6 class="text-primary fw-bold text-uppercase" data-i18n="practice_sub">Core Practice Areas</h6>
-        <h2 class="fw-bold display-6" data-i18n="practice_title">Comprehensive Legal Solutions</h2>
+      <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+        <h6 class="text-gold fw-bold text-uppercase tracking-wider" data-i18n="practice_sub">Expertise</h6>
+        <h2 class="display-5 font-heading text-white" data-i18n="practice_title">Core Practice Specializations</h2>
       </div>
 
       <div class="row g-4">
-        <!-- Practice Card 1 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 border-0 shadow-sm hover-card p-3">
-            <div class="card-body">
-              <div class="feature-icon bg-primary bg-opacity-10 text-primary rounded-3 mb-3 d-inline-flex align-items-center justify-content-center p-3">
-                <i class="fa-solid fa-gavel fs-3"></i>
-              </div>
-              <h4 class="card-title fw-bold" data-i18n="civil_law_title">Civil Litigation</h4>
-              <p class="card-text text-muted" data-i18n="civil_law_desc">Property disputes, recovery suits, injunctions, and contract enforcement under Indian Jurisdictions.</p>
-              <button type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal" class="btn btn-link p-0 fw-semibold text-primary text-decoration-none" data-i18n="btn_read_more">Book Consult <i class="fa-solid fa-arrow-right ms-1"></i></button>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-card p-4 h-100">
+            <div class="p-3 rounded-3 bg-gold bg-opacity-10 text-gold d-inline-block mb-3">
+              <i class="fa-solid fa-building-user fs-2"></i>
             </div>
+            <h4 class="font-heading text-white mb-3" data-i18n="pra_1_title">RERA & Property Law</h4>
+            <p class="text-muted fs-7" data-i18n="pra_1_desc">Expert handling of builder delays, carpet area verification, society redevelopment, and title search reports under MahaRERA.</p>
           </div>
         </div>
 
-        <!-- Practice Card 2 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card h-100 border-0 shadow-sm hover-card p-3">
-            <div class="card-body">
-              <div class="feature-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-3 d-inline-flex align-items-center justify-content-center p-3">
-                <i class="fa-solid fa-shield-halved fs-3"></i>
-              </div>
-              <h4 class="card-title fw-bold" data-i18n="criminal_law_title">Criminal Defense</h4>
-              <p class="card-text text-muted" data-i18n="criminal_law_desc">Bail applications, trial defense, economic offenses, and High Court appeals across Maharashtra.</p>
-              <button type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal" class="btn btn-link p-0 fw-semibold text-primary text-decoration-none" data-i18n="btn_read_more">Book Consult <i class="fa-solid fa-arrow-right ms-1"></i></button>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-card p-4 h-100">
+            <div class="p-3 rounded-3 bg-gold bg-opacity-10 text-gold d-inline-block mb-3">
+              <i class="fa-solid fa-shield-halved fs-2"></i>
             </div>
+            <h4 class="font-heading text-white mb-3" data-i18n="pra_2_title">Criminal Defense & Bail</h4>
+            <p class="text-muted fs-7" data-i18n="pra_2_desc">High-priority bail applications, anticipatory bail, trial defense, and appeals across Sessions & High Courts.</p>
           </div>
         </div>
 
-        <!-- Practice Card 3 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card h-100 border-0 shadow-sm hover-card p-3">
-            <div class="card-body">
-              <div class="feature-icon bg-success bg-opacity-10 text-success rounded-3 mb-3 d-inline-flex align-items-center justify-content-center p-3">
-                <i class="fa-solid fa-house-chimney-window fs-3"></i>
-              </div>
-              <h4 class="card-title fw-bold" data-i18n="property_law_title">Property & RERA</h4>
-              <p class="card-text text-muted" data-i18n="property_law_desc">Title search reports, property verification, RERA litigation, and redevelopment agreements.</p>
-              <button type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal" class="btn btn-link p-0 fw-semibold text-primary text-decoration-none" data-i18n="btn_read_more">Book Consult <i class="fa-solid fa-arrow-right ms-1"></i></button>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="glass-card p-4 h-100">
+            <div class="p-3 rounded-3 bg-gold bg-opacity-10 text-gold d-inline-block mb-3">
+              <i class="fa-solid fa-scale-balanced fs-2"></i>
             </div>
+            <h4 class="font-heading text-white mb-3" data-i18n="pra_3_title">Civil & Commercial Disputes</h4>
+            <p class="text-muted fs-7" data-i18n="pra_3_desc">Injunctions, recovery suits, breach of contract, partnership disputes, and arbitration proceedings.</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive Document Portal Section -->
-  <section class="py-5 bg-body">
-    <div class="container py-4">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6" data-aos="fade-right">
-          <span class="badge bg-primary-subtle text-primary mb-2 fw-semibold" data-i18n="portal_badge">Secure Client Services</span>
-          <h2 class="fw-bold display-6 mb-3" data-i18n="portal_title">Encrypted Document Upload & Case Enquiry</h2>
-          <p class="text-muted mb-4" data-i18n="portal_desc">Upload confidential case files directly to our legal team. All files are safeguarded under attorney-client privilege protocols.</p>
-          
-          <form id="secureUploadForm" class="p-4 border rounded-3 bg-body-tertiary shadow-sm">
-            <div class="mb-3">
-              <label for="clientName" class="form-label fw-semibold" data-i18n="label_name">Full Name</label>
-              <input type="text" class="form-control" id="clientName" required>
-            </div>
-            <div class="mb-3">
-              <label for="clientPhone" class="form-label fw-semibold" data-i18n="label_phone">Phone Number</label>
-              <input type="tel" class="form-control" id="clientPhone" required>
-            </div>
-            <div class="mb-3">
-              <label for="docUpload" class="form-label fw-semibold" data-i18n="label_document">Select Document (PDF/JPG)</label>
-              <input type="file" class="form-control" id="docUpload" accept=".pdf,.png,.jpg,.jpeg" required>
-            </div>
-            <button type="submit" class="btn btn-primary w-100 fw-semibold" data-i18n="btn_upload">Submit Encrypted Case File</button>
-          </form>
-        </div>
-        
-        <div class="col-lg-6" data-aos="fade-left">
-          <div class="ratio ratio-16x9 rounded-3 shadow-lg overflow-hidden">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.809376189973!2d72.8318!3d18.9281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDU1JzElevenLjIiTiA3MsKwNDknNTQuNSJF!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Team Section -->
-  <section id="team" class="py-5 bg-body-tertiary">
-    <div class="container py-4">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="display-5 fw-bold">Our Experienced Legal Team</h2>
-        <p class="text-muted">Advocates dedicated to protecting your legal rights.</p>
-      </div>
-
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 shadow-sm border-0">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Adv. P. P. Shinde">
-            <div class="card-body">
-              <h4 class="fw-bold mb-1">Adv. P. P. Shinde</h4>
-              <p class="text-primary fs-7 fw-semibold">Founder & Senior Advocate</p>
-              <p class="fs-7 text-muted mb-1"><strong>Qualification:</strong> B.Sc., LL.M.</p>
-              <p class="fs-7 text-muted mb-1"><strong>Experience:</strong> 25+ Years</p>
-              <p class="fs-7 text-muted mb-0"><strong>Languages:</strong> English, Hindi, Marathi</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Blog / Legal Updates Section -->
-  <section id="blog" class="py-5">
-    <div class="container py-4">
-      <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">Latest Legal Insights & Updates</h2>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-              <span class="badge bg-primary mb-2">Property Law</span>
-              <h5 class="fw-bold">Understanding RERA Provisions in Redevelopment</h5>
-              <p class="text-muted fs-7">Key takeaways for flat owners undergoing society redevelopment in Maharashtra.</p>
-              <small class="text-muted">Published: July 2026</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-body-tertiary">
-    <div class="container py-4">
-      <div class="row g-5">
-        <div class="col-lg-6" data-aos="fade-right">
-          <h2 class="fw-bold mb-3">Get in Touch</h2>
-          <form id="contactPageForm" class="p-4 border rounded-3 bg-body">
-            <div class="mb-3">
-              <label class="form-label fw-semibold">Full Name</label>
-              <input type="text" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label fw-semibold">Email Address</label>
-              <input type="email" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label fw-semibold">Message / Legal Query</label>
-              <textarea class="form-control" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary fw-bold w-100">Send Message</button>
-          </form>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-left">
-          <h2 class="fw-bold mb-3">Office Information</h2>
-          <p><i class="fa-solid fa-location-dot text-primary me-2"></i> Suite 402, Judicial Chambers, Near High Court, Mumbai, MH - 400001</p>
-          <p><i class="fa-solid fa-clock text-primary me-2"></i> Mon - Sat: 09:30 AM - 07:30 PM</p>
-          <p><i class="fa-solid fa-phone text-primary me-2"></i> +91 98200 00000</p>
-          <p><i class="fa-solid fa-envelope text-primary me-2"></i> contact@ppshindeassociates.com</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white pt-5 pb-3">
+  <footer id="contact" class="py-5 border-top border-secondary border-opacity-25 bg-black">
     <div class="container">
-      <div class="row g-4 mb-4">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-5">
+          <h4 class="font-heading text-gold mb-3">P. P. SHINDE & ASSOCIATES</h4>
+          <p class="text-muted fs-7 max-w-700">Dedicated legal representation committed to defending individual rights and commercial integrity throughout Maharashtra.</p>
+        </div>
         <div class="col-lg-4">
-          <h5 class="fw-bold text-warning mb-3" data-i18n="brand_title">P. P. SHINDE & ASSOCIATE</h5>
-          <p class="text-white-50 fs-7" data-i18n="footer_about">Advocates & Legal Consultants providing legal representation across Mumbai, Thane, and High Courts of Maharashtra.</p>
-        </div>
-        <div class="col-6 col-lg-2">
-          <h6 class="fw-bold mb-3" data-i18n="footer_links">Quick Links</h6>
-          <ul class="list-unstyled fs-7">
-            <li><a href="#about" class="text-white-50 text-decoration-none hover-white" data-i18n="nav_about">About Us</a></li>
-            <li><a href="#services" class="text-white-50 text-decoration-none hover-white" data-i18n="nav_practice">Practice Areas</a></li>
-            <li><a href="#team" class="text-white-50 text-decoration-none hover-white" data-i18n="nav_team">Our Team</a></li>
-            <li><a href="#contact" class="text-white-50 text-decoration-none hover-white" data-i18n="nav_contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-3">
-          <h6 class="fw-bold mb-3" data-i18n="footer_contact">Office Address</h6>
-          <p class="text-white-50 fs-7 mb-1"><i class="fa-solid fa-location-dot me-2 text-warning"></i> Suite 402, Judicial Chambers, Mumbai, MH - 400001</p>
-          <p class="text-white-50 fs-7 mb-1"><i class="fa-solid fa-phone me-2 text-warning"></i> +91 98200 00000</p>
-          <p class="text-white-50 fs-7"><i class="fa-solid fa-envelope me-2 text-warning"></i> contact@ppshindeassociates.com</p>
-        </div>
-        <div class="col-lg-3">
-          <h6 class="fw-bold mb-3" data-i18n="footer_newsletter">Newsletter</h6>
-          <form id="newsletterForm">
-            <div class="input-group input-group-sm">
-              <input type="email" class="form-control" placeholder="Your Email" required>
-              <button class="btn btn-warning fw-semibold" type="submit" data-i18n="btn_subscribe">Subscribe</button>
-            </div>
-          </form>
+          <h5 class="text-white mb-3">Contact Chambers</h5>
+          <p class="text-muted fs-7 mb-1"><i class="fa-solid fa-location-dot me-2 text-gold"></i> Suite 402, Judicial Chambers, Mumbai, MH</p>
+          <p class="text-muted fs-7 mb-0"><i class="fa-solid fa-envelope me-2 text-gold"></i> contact@ppshindeassociates.com</p>
         </div>
       </div>
-      <hr class="border-secondary">
-      <div class="text-center text-white-50 fs-8">
-        <p class="mb-0">&copy; 2026 P. P. SHINDE & ASSOCIATE. All Rights Reserved. Compliant with Bar Council of India regulations.</p>
+      <div class="text-center mt-5 pt-4 border-top border-secondary border-opacity-10 fs-8 text-muted">
+        &copy; 2026 P. P. SHINDE & ASSOCIATES. All Rights Reserved.
       </div>
     </div>
   </footer>
 
-  <!-- Floating Utilities: WhatsApp & AI Assistant Button -->
-  <div class="position-fixed bottom-0 end-0 p-3 d-flex flex-column gap-2 style-floating-utilities" style="z-index: 1050;">
-    <button class="btn btn-primary rounded-circle p-3 shadow-lg d-flex align-items-center justify-content-center" id="aiChatToggle" type="button" title="AI Legal Assistant" style="width: 55px; height: 55px;">
+  <!-- Floating Utility Buttons (WhatsApp + AI Assistant) -->
+  <div class="floating-btn-group">
+    <!-- WhatsApp Direct Trigger -->
+    <a href="https://wa.me/919820000000?text=Hello%20Advocate%20P.%20P.%20Shinde,%20I%20need%20legal%20assistance." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="btn-floating btn-whatsapp" 
+       title="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp fs-2"></i>
+    </a>
+
+    <!-- AI Assistant Offcanvas Drawer Trigger -->
+    <button class="btn-floating btn-ai-assistant" 
+            id="aiChatToggle" 
+            type="button" 
+            data-bs-toggle="offcanvas" 
+            data-bs-target="#aiChatDrawer" 
+            aria-controls="aiChatDrawer"
+            title="AI Legal Assistant">
       <i class="fa-solid fa-robot fs-4"></i>
     </button>
-    <a href="https://wa.me/919820000000?text=Hello%20P.%20P.%20SHINDE%20%26%20ASSOCIATE,%20I%20need%20legal%20assistance." target="_blank" rel="noopener noreferrer" class="btn btn-success rounded-circle p-3 shadow-lg d-flex align-items-center justify-content-center" title="WhatsApp Chat" style="width: 55px; height: 55px;">
-      <i class="fa-brands fa-whatsapp fs-3"></i>
-    </a>
   </div>
 
   <!-- Offcanvas AI Legal Assistant Drawer -->
-  <div class="offcanvas offcanvas-end shadow-lg" tabindex="-1" id="aiChatDrawer" aria-labelledby="aiChatLabel">
-    <div class="offcanvas-header bg-primary text-white">
-      <h5 class="offcanvas-title d-flex align-items-center gap-2" id="aiChatLabel">
-        <i class="fa-solid fa-robot"></i> <span data-i18n="ai_assistant_title">Legal Assistant AI</span>
-      </h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <div class="offcanvas offcanvas-end ai-chat-drawer text-white" tabindex="-1" id="aiChatDrawer">
+    <div class="offcanvas-header border-bottom border-secondary border-opacity-25">
+      <div class="d-flex align-items-center gap-2">
+        <i class="fa-solid fa-robot text-gold fs-4"></i>
+        <h5 class="offcanvas-title font-heading text-gold mb-0">Legal Assistant AI</h5>
+      </div>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
     </div>
-    <div class="offcanvas-body d-flex flex-column bg-body-tertiary">
-      <div class="chat-messages flex-grow-1 overflow-auto p-2 mb-3" id="chatContainer">
-        <div class="alert alert-info fs-7" data-i18n="ai_disclaimer">
-          <i class="fa-solid fa-circle-info me-1"></i> Disclaimer: This AI offers automated legal information, not formal legal representation.
-        </div>
-        <div class="bg-body p-3 rounded-3 shadow-sm mb-2 max-w-85 border">
-          <small class="text-primary fw-bold d-block mb-1">AI Assistant</small>
-          <span data-i18n="ai_welcome_msg">Hello! How can I assist you with your legal query today?</span>
+    <div class="offcanvas-body d-flex flex-column">
+      <div class="alert alert-warning bg-warning bg-opacity-10 border-warning border-opacity-25 text-warning fs-8 mb-3">
+        <i class="fa-solid fa-circle-info me-1"></i> Automated legal information tool. For formal representation, schedule an appointment with Adv. P. P. Shinde.
+      </div>
+
+      <div class="chat-messages flex-grow-1 overflow-auto mb-3" id="chatMessages" style="max-height: 65vh;">
+        <div class="d-flex mb-3">
+          <div class="chat-bubble-ai p-3">
+            Hello! How can I assist you regarding RERA, Property, Civil, or Criminal legal matters today?
+          </div>
         </div>
       </div>
+
       <div class="input-group">
-        <input type="text" id="chatInput" class="form-control" placeholder="Ask legal question..." aria-label="Chat Input">
-        <button class="btn btn-primary" id="sendChatBtn" type="button"><i class="fa-solid fa-paper-plane"></i></button>
+        <input type="text" id="chatInput" class="form-control form-control-lux" placeholder="Type your legal query...">
+        <button class="btn btn-lux rounded-start-0" id="chatSendBtn" type="button">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
       </div>
     </div>
   </div>
 
-  <!-- Book Consultation Modal -->
-  <div class="modal fade" id="consultation-modal" tabindex="-1" aria-hidden="true">
+  <!-- Consultation Modal -->
+  <div class="modal fade" id="consultationModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header bg-primary text-white">
-          <h5 class="modal-title fw-bold" data-i18n="modal_title">Schedule Legal Consultation</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-content glass-card bg-dark text-white border-gold">
+        <div class="modal-header border-bottom border-secondary border-opacity-25">
+          <h5 class="modal-title font-heading text-gold">Schedule Legal Advisory</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body p-4">
-          <form id="consultationForm">
+          <form id="modalConsultForm">
             <div class="mb-3">
-              <label class="form-label fw-semibold" data-i18n="label_name">Full Name</label>
-              <input type="text" class="form-control" required>
+              <label class="form-label fs-7">Full Name</label>
+              <input type="text" class="form-control form-control-lux" required>
             </div>
             <div class="mb-3">
-              <label class="form-label fw-semibold" data-i18n="label_phone">Phone Number</label>
-              <input type="tel" class="form-control" required>
+              <label class="form-label fs-7">Phone Number</label>
+              <input type="tel" class="form-control form-control-lux" required>
             </div>
-            <div class="mb-3">
-              <label class="form-label fw-semibold" data-i18n="label_practice">Select Practice Area</label>
-              <select class="form-select" required>
-                <option value="civil">Civil Law</option>
-                <option value="criminal">Criminal Defense</option>
-                <option value="property">Property & RERA</option>
-                <option value="family">Family & Matrimonial</option>
-              </select>
-            </div>
-            <button type="submit" class="btn btn-primary w-100 fw-bold" data-i18n="btn_submit">Confirm Appointment</button>
+            <button type="submit" class="btn btn-lux w-100 mt-2">Confirm Appointment</button>
           </form>
         </div>
       </div>
@@ -557,325 +519,146 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
-    /* ================= TRANSLATIONS DICTIONARY ================= */
-    const translations = {
-      en: {
-        brand_title: "P. P. SHINDE & ASSOCIATE",
-        brand_subtitle: "Advocates & Legal Consultants",
-        emergency_label: "24/7 Legal Emergency",
-        nav_home: "Home",
-        nav_about: "About Us",
-        nav_practice: "Practice Areas",
-        nav_team: "Our Team",
-        nav_blog: "Legal Updates",
-        nav_contact: "Contact",
-        btn_book_consultation: "Book Consultation",
-        btn_call_now: "Call Now: +91 98200 00000",
-        hero_badge: "Trusted Legal Excellence Since 1998",
-        hero_title: "Unyielding Integrity. Proven Results.",
-        hero_subtitle: "Providing comprehensive legal services across Civil, Criminal, Corporate, and Family law with full fluency in English, Hindi, and Marathi.",
-        stat_years: "Years Experience",
-        stat_cases: "Cases Won",
-        stat_success: "Success Rate",
-        stat_advocates: "Expert Advocates",
-        practice_sub: "Core Practice Areas",
-        practice_title: "Comprehensive Legal Solutions",
-        civil_law_title: "Civil Litigation",
-        civil_law_desc: "Property disputes, recovery suits, injunctions, and contract enforcement under Indian Jurisdictions.",
-        criminal_law_title: "Criminal Defense",
-        criminal_law_desc: "Bail applications, trial defense, economic offenses, and High Court appeals across Maharashtra.",
-        property_law_title: "Property & RERA",
-        property_law_desc: "Title search reports, property verification, RERA litigation, and redevelopment agreements.",
-        btn_read_more: "Book Consult",
-        portal_badge: "Secure Client Services",
-        portal_title: "Encrypted Document Upload & Case Enquiry",
-        portal_desc: "Upload confidential case files directly to our legal team. All files are safeguarded under attorney-client privilege protocols.",
-        label_name: "Full Name",
-        label_phone: "Phone Number",
-        label_document: "Select Document (PDF/JPG)",
-        btn_upload: "Submit Encrypted Case File",
-        footer_about: "Advocates & Legal Consultants providing legal representation across Mumbai, Thane, and High Courts of Maharashtra.",
-        footer_links: "Quick Links",
-        footer_contact: "Office Address",
-        footer_newsletter: "Newsletter",
-        btn_subscribe: "Subscribe",
-        ai_assistant_title: "Legal Assistant AI",
-        ai_disclaimer: "Disclaimer: This AI offers automated legal information, not formal legal representation.",
-        ai_welcome_msg: "Hello! How can I assist you with your legal query today?",
-        modal_title: "Schedule Legal Consultation",
-        label_practice: "Select Practice Area",
-        btn_submit: "Confirm Appointment"
-      },
-      hi: {
-        brand_title: "पी. पी. शिंदे अँड असोसिएट",
-        brand_subtitle: "अधिवक्ता एवं कानूनी सलाहकार",
-        emergency_label: "24/7 आपातकालीन कानूनी सहायता",
-        nav_home: "मुख्य पृष्ठ",
-        nav_about: "हमारे बारे में",
-        nav_practice: "अभ्यास क्षेत्र",
-        nav_team: "हमारी टीम",
-        nav_blog: "कानूनी अपडेट",
-        nav_contact: "संपर्क करें",
-        btn_book_consultation: "परामर्श बुक करें",
-        btn_call_now: "कॉल करें: +91 98200 00000",
-        hero_badge: "1998 से विश्वसनीय कानूनी श्रेष्ठता",
-        hero_title: "अटल सत्य। सिद्ध परिणाम।",
-        hero_subtitle: "अंग्रेजी, हिंदी और मराठी में पूर्ण दक्षता के साथ दीवानी, आपराधिक, कॉर्पोरेट और पारिवारिक कानून में व्यापक कानूनी सेवाएं।",
-        stat_years: "वर्षों का अनुभव",
-        stat_cases: "जीते गए मामले",
-        stat_success: "सफलता दर",
-        stat_advocates: "विशेषज्ञ अधिवक्ता",
-        practice_sub: "प्रमुख अभ्यास क्षेत्र",
-        practice_title: "व्यापक कानूनी समाधान",
-        civil_law_title: "दीवानी मुकदमेबाजी (Civil)",
-        civil_law_desc: "भारतीय क्षेत्राधिकार के तहत संपत्ति विवाद, वसूली मुकदमे, निषेधाज्ञा और अनुबंध प्रवर्तन।",
-        criminal_law_title: "आपराधिक बचाव (Criminal)",
-        criminal_law_desc: "महाराष्ट्र भर में जमानत आवेदन, ट्रायल डिफेंस, आर्थिक अपराध और उच्च न्यायालय अपील।",
-        property_law_title: "संपत्ति एवं रेरा (RERA)",
-        property_law_desc: "टाइटल खोज रिपोर्ट, संपत्ति सत्यापन, रेरा मुकदमेबाजी और पुनर्विकास समझौते।",
-        btn_read_more: "परामर्श बुक करें",
-        portal_badge: "सुरक्षित क्लाइंट सेवाएं",
-        portal_title: "एनक्रिप्टेड दस्तावेज़ अपलोड और मामला पूछताछ",
-        portal_desc: "गोपनीय मामला फ़ाइलें सीधे हमारी कानूनी टीम को अपलोड करें। वकील-क्लाइंट विशेषाधिकार के तहत सभी फ़ाइलें सुरक्षित हैं।",
-        label_name: "पूरा नाम",
-        label_phone: "फोन नंबर",
-        label_document: "दस्तावेज़ चुनें (PDF/JPG)",
-        btn_upload: "सुरक्षित फ़ाइल जमा करें",
-        footer_about: "मुंबई, ठाणे और महाराष्ट्र के उच्च न्यायालयों में कानूनी प्रतिनिधित्व प्रदान करने वाले अधिवक्ता।",
-        footer_links: "त्वरित लिंक",
-        footer_contact: "कार्यालय का पता",
-        footer_newsletter: "न्यूज़लेटर",
-        btn_subscribe: "सदस्यता लें",
-        ai_assistant_title: "कानूनी एआई सहायक",
-        ai_disclaimer: "अस्वीकरण: यह एआई स्वचालित कानूनी जानकारी प्रदान करता है, औपचारिक कानूनी प्रतिनिधित्व नहीं।",
-        ai_welcome_msg: "नमस्ते! आज मैं आपकी कानूनी पूछताछ में कैसे सहायता कर सकता हूँ?",
-        modal_title: "कानूनी परामर्श का समय तय करें",
-        label_practice: "अभ्यास क्षेत्र चुनें",
-        btn_submit: "नियुक्ति की पुष्टि करें"
-      },
-      mr: {
-        brand_title: "पी. पी. शिंदे अँड असोसिएट",
-        brand_subtitle: "ॲडव्होकेट्स व कायदेशीर सल्लागार",
-        emergency_label: "२४/७ तातडीची कायदेशीर मदत",
-        nav_home: "मुख्यपृष्ठ",
-        nav_about: "आमच्याबद्दल",
-        nav_practice: "कायदेशीर क्षेत्रे",
-        nav_team: "आमची टीम",
-        nav_blog: "कायदेशीर घडामोडी",
-        nav_contact: "संपर्क",
-        btn_book_consultation: "सल्लामसलत बुक करा",
-        btn_call_now: "कॉल करा: +91 98200 00000",
-        hero_badge: "१९९८ पासून विश्वासार्ह कायदेशीर सेवा",
-        hero_title: "अढळ निष्ठा. सिद्ध निकाल.",
-        hero_subtitle: "इंग्रजी, हिंदी आणि मराठी भाषेवर पूर्ण प्रभुत्वासह दिवाणी, फौजदारी, कॉर्पोरेट आणि कौटुंबिक कायद्यांमध्ये सर्वसमावेशक कायदेशीर सेवा.",
-        stat_years: "वर्षांचा अनुभव",
-        stat_cases: "जिंकलेले खटले",
-        stat_success: "यशाचे प्रमाण",
-        stat_advocates: "तज्ज्ञ वकील",
-        practice_sub: "प्रमुख कायदेशीर क्षेत्रे",
-        practice_title: "सर्वसमावेशक कायदेशीर उपाय",
-        civil_law_title: "दिवाणी दावे (Civil Law)",
-        civil_law_desc: "मालमत्ता विवाद, वसुलीचे दावे, मनाईहुकूम आणि करारांची अंमलबजावणी.",
-        criminal_law_title: "फौजदारी संरक्षण (Criminal Defense)",
-        criminal_law_desc: "जामीन अर्ज, न्यायालयीन संरक्षण, आर्थिक गुन्हे आणि उच्च न्यायालयातील अपील.",
-        property_law_title: "मालमत्ता आणि रेरा (RERA)",
-        property_law_desc: "टायटल सर्च रिपोर्ट, मालमत्ता पडताळणी, रेरा खटले आणि पुनर्विकास करार.",
-        btn_read_more: "सल्लामसलत बुक करा",
-        portal_badge: "सुरक्षित ग्राहक सेवा",
-        portal_title: "एनक्रिप्टेड दस्तऐवज अपलोड व चौकशी",
-        portal_desc: "तुमची कागदपत्रे थेट आमच्या कायदेशीर टीमकडे पाठवा. वकील-ग्राहक गोपनीयतेनुसार सर्व दस्तऐवज सुरक्षित राहतील.",
-        label_name: "पूर्ण नाव",
-        label_phone: "फोन नंबर",
-        label_document: "कागदपत्र निवडा (PDF/JPG)",
-        btn_upload: "दस्तऐवज सबमिट करा",
-        footer_about: "मुंबई, ठाणे आणि महाराष्ट्र उच्च न्यायालयात कायदेशीर प्रतिनिधित्व करणारे वकील व सल्लागार.",
-        footer_links: "महत्वाच्या लिंक्स",
-        footer_contact: "कार्यालयाचा पत्ता",
-        footer_newsletter: "वृत्तपत्र",
-        btn_subscribe: "सबस्क्राईब करा",
-        ai_assistant_title: "कायदेशीर AI सहाय्यक",
-        ai_disclaimer: "सूचना: हे AI स्वयंचलित कायदेशीर माहिती देते, हा औपचारिक कायदेशीर सल्ला नाही.",
-        ai_welcome_msg: "नमस्कार! मी तुम्हाला कायदेशीर चौकशीत कशी मदत करू शकतो?",
-        modal_title: "कायदेशीर सल्ल्याची वेळ घ्या",
-        label_practice: "कायदेशीर क्षेत्र निवडा",
-        btn_submit: "वेळ निश्चित करा"
-      }
-    };
-
-    /* ================= MAIN INTERACTION LOGIC ================= */
     document.addEventListener('DOMContentLoaded', () => {
-      // 1. Initialize AOS Animations safely
-      if (typeof AOS !== 'undefined') {
-        AOS.init({ duration: 800, once: true, offset: 100 });
-      }
+      if (typeof AOS !== 'undefined') AOS.init({ duration: 800, once: true });
 
-      // 2. Loading Overlay Fade Out
-      const spinner = document.getElementById('loading-spinner');
-      if (spinner) {
-        setTimeout(() => {
-          spinner.style.opacity = '0';
-          setTimeout(() => spinner.style.display = 'none', 300);
-        }, 300);
-      }
+      // LocalStorage Safe Helper
+      const safeStorage = {
+        get: (k) => { try { return localStorage.getItem(k); } catch(e) { return null; } },
+        set: (k, v) => { try { localStorage.setItem(k, v); } catch(e) {} }
+      };
 
-      // 3. Language Switcher Engine
-      const langSelectors = document.querySelectorAll('.lang-select');
-      
-      function getInitialLanguage() {
-        const saved = localStorage.getItem('pp_shinde_lang');
-        if (saved && ['en', 'hi', 'mr'].includes(saved)) return saved;
-        const browserLang = (navigator.language || 'en').slice(0, 2);
-        return ['hi', 'mr'].includes(browserLang) ? browserLang : 'en';
-      }
+      // Multi-Language Translation Dictionary
+      const dict = {
+        en: {
+          tagline: "Advocates & Legal Consultants",
+          emergency_tag: "24/7 Urgent Legal Counsel",
+          nav_home: "Home", nav_about: "About", nav_practice: "Practice Areas", nav_contact: "Contact",
+          btn_consult: "Book Consult", hero_badge: "25+ Years of Legal Mastery in Maharashtra",
+          hero_title: "Relentless Advocacy. Exceptional Precision.",
+          hero_sub: "Strategic counsel in High Court & District Litigation, RERA & Property Disputes, Criminal Defense, and Corporate Arbitration.",
+          btn_schedule: "Schedule Private Advisory",
+          quick_inquiry: "Quick Legal Inquiry", ph_name: "Full Name", ph_phone: "Phone Number",
+          ph_details: "Brief details of legal dispute...", btn_send: "Submit Case Review",
+          about_sub: "Leadership Profile", about_title: "Uncompromising Defense & Legal Excellence",
+          about_p1: "Founded by Advocate P. P. Shinde, P. P. SHINDE & ASSOCIATES has built a reputation for formidable courtroom advocacy and sophisticated legal strategy across the Mumbai Metropolitan Region and Maharashtra.",
+          about_p2: "With decades of trial experience across High Courts, District & Sessions Courts, and specialized statutory tribunals such as MahaRERA, the firm provides client-centric, result-driven representation in complex civil, criminal, and real estate litigation.",
+          practice_sub: "Expertise", practice_title: "Core Practice Specializations",
+          pra_1_title: "RERA & Property Law", pra_1_desc: "Expert handling of builder delays, carpet area verification, society redevelopment, and title search reports under MahaRERA.",
+          pra_2_title: "Criminal Defense & Bail", pra_2_desc: "High-priority bail applications, anticipatory bail, trial defense, and appeals across Sessions & High Courts.",
+          pra_3_title: "Civil & Commercial Disputes", pra_3_desc: "Injunctions, recovery suits, breach of contract, partnership disputes, and arbitration proceedings."
+        },
+        hi: {
+          tagline: "अधिवक्ता एवं कानूनी सलाहकार",
+          emergency_tag: "24/7 आपातकालीन सलाह",
+          nav_home: "मुख्य", nav_about: "परिचय", nav_practice: "अभ्यास क्षेत्र", nav_contact: "संपर्क",
+          btn_consult: "परामर्श लें", hero_badge: "महाराष्ट्र में 25+ वर्षों का कानूनी अनुभव",
+          hero_title: "अटूट प्रतिबद्धता। उत्कृष्ट परिणाम।",
+          hero_sub: "उच्च न्यायालय, रेरा संपत्ति विवाद, आपराधिक बचाव और नागरिक मुकदमों में विशेषज्ञ कानूनी सलाह।",
+          btn_schedule: "परामर्श का समय लें",
+          quick_inquiry: "त्वरित कानूनी पूछताछ", ph_name: "पूरा नाम", ph_phone: "फोन नंबर",
+          ph_details: "कानूनी विवाद का विवरण...", btn_send: "मामला समीक्षा जमा करें",
+          about_sub: "नेतृत्व परिचय", about_title: "उत्कृष्ट कानूनी प्रतिनिधित्व व संरक्षण",
+          about_p1: "अधिवक्ता पी. पी. शिंदे द्वारा स्थापित, पी. पी. शिंदे एंड एसोसिएट्स ने मुंबई और महाराष्ट्र भर में मजबूत अदालती पैरवी और रणनीतिक कानूनी सलाह के लिए प्रतिष्ठा बनाई है।",
+          about_p2: "उच्च न्यायालय, सत्र न्यायालय और महारेरा जैसे विशेष न्यायाधिकरणों में वर्षों के अनुभव के साथ, हमारी फर्म दीवानी, आपराधिक और संपत्ति विवादों में परिणामी प्रतिनिधित्व प्रदान करती है।",
+          practice_sub: "विशेषज्ञता", practice_title: "मुख्य कानूनी क्षेत्र",
+          pra_1_title: "रेरा और संपत्ति कानून", pra_1_desc: "बिल्डर देरी, कारपेट एरिया सत्यापन, और रेरा विवादों का समाधान।",
+          pra_2_title: "आपराधिक बचाव व जमानत", pra_2_desc: "अग्रिम जमानत, नियमित जमानत और सत्र व उच्च न्यायालय में ट्रायल रक्षा।",
+          pra_3_title: "दीवानी विवाद (Civil)", pra_3_desc: "अनुबंध उल्लंघन, संपत्ति विवाद और मध्यस्थता कार्यवाही।"
+        },
+        mr: {
+          tagline: "ॲडव्होकेट्स व कायदेशीर सल्लागार",
+          emergency_tag: "२४/७ तातडीची मदत",
+          nav_home: "मुख्यपृष्ठ", nav_about: "माहिती", nav_practice: "कायदेशीर क्षेत्रे", nav_contact: "संपर्क",
+          btn_consult: "सल्लामसलत बुक करा", hero_badge: "महाराष्ट्रात २५+ वर्षांचा कायदेशीर अनुभव",
+          hero_title: "अढळ निष्ठा. सिद्ध निकाल.",
+          hero_sub: "उच्च न्यायालय व जिल्हा न्यायालयात दिवाणी, फौजदारी, रेरा आणि मालमत्ता वादात तज्ज्ञ मार्गदर्शन.",
+          btn_schedule: "वेळ निश्चित करा",
+          quick_inquiry: "कायदेशीर चौकशी", ph_name: "पूर्ण नाव", ph_phone: "फोन नंबर",
+          ph_details: "कायदेशीर वादाचा तपशील...", btn_send: "माहिती पाठवा",
+          about_sub: "संस्थापक परिचय", about_title: "कायदेशीर उत्कृष्टता आणि खंबीर बाजू",
+          about_p1: "ॲडव्होकेट पी. पी. शिंदे यांनी स्थापन केलेल्या 'पी. पी. शिंदे अँड असोसिएट्स'ने मुंबई आणि संपूर्ण महाराष्ट्रात न्यायालयात प्रभावी युक्तिवाद व रणनीतीसाठी नाव मिळवले आहे.",
+          about_p2: "उच्च न्यायालय, सत्र न्यायालय आणि महारेरा प्राधिकरणातील प्रदीर्घ अनुभवाच्या आधारे आमची फर्म मालमत्ता वाद, दिवाणी व फौजदारी दाव्यांमध्ये विश्वासार्ह सेवा प्रदान करते.",
+          practice_sub: "विशेषज्ञता", practice_title: "प्रमुख कायदेशीर क्षेत्रे",
+          pra_1_title: "रेरा आणि मालमत्ता कायदा", pra_1_desc: "बिल्डर विलंब, चटई क्षेत्र पडताळणी, आणि महारेरा अंतर्गत दावे.",
+          pra_2_title: "फौजदारी संरक्षण आणि जामीन", pra_2_desc: "तातडीचे जामीन अर्ज, अटकपूर्व जामीन आणि उच्च न्यायालयातील अपील.",
+          pra_3_title: "दिवाणी दावे (Civil Law)", pra_3_desc: "मालमत्ता वाद, वसुलीचे दावे आणि करारांची अंमलबजावणी."
+        }
+      };
 
-      function applyLanguage(lang) {
-        if (!translations[lang]) return;
+      function setLang(lang) {
+        if(!dict[lang]) lang = 'en';
         document.querySelectorAll('[data-i18n]').forEach(el => {
           const key = el.getAttribute('data-i18n');
-          if (translations[lang][key]) {
-            el.textContent = translations[lang][key];
-          }
+          if(dict[lang][key]) el.textContent = dict[lang][key];
         });
-        langSelectors.forEach(sel => sel.value = lang);
-        localStorage.setItem('pp_shinde_lang', lang);
-        document.documentElement.lang = lang;
-      }
-
-      langSelectors.forEach(sel => {
-        sel.addEventListener('change', (e) => applyLanguage(e.target.value));
-      });
-      applyLanguage(getInitialLanguage());
-
-      // 4. Dark / Light Theme Toggle
-      const themeToggleBtn = document.getElementById('themeToggle');
-      const themeIcon = document.getElementById('themeIcon');
-      
-      function setTheme(theme) {
-        document.documentElement.setAttribute('data-bs-theme', theme);
-        localStorage.setItem('pp_shinde_theme', theme);
-        if (themeIcon) {
-          themeIcon.className = theme === 'dark' ? 'fa-solid fa-sun text-warning' : 'fa-solid fa-moon text-warning';
-        }
-      }
-
-      const savedTheme = localStorage.getItem('pp_shinde_theme') || 'light';
-      setTheme(savedTheme);
-
-      themeToggleBtn?.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-bs-theme');
-        setTheme(current === 'dark' ? 'light' : 'dark');
-      });
-
-      // 5. Counter Animations
-      const counters = document.querySelectorAll('.counter');
-      let animated = false;
-
-      function triggerCounters() {
-        counters.forEach(counter => {
-          const target = +counter.getAttribute('data-target');
-          const speed = target / 40;
-          const updateCount = () => {
-            const count = +counter.innerText;
-            if (count < target) {
-              counter.innerText = Math.ceil(count + speed);
-              setTimeout(updateCount, 30);
-            } else {
-              counter.innerText = target;
-            }
-          };
-          updateCount();
+        document.querySelectorAll('[placeholder]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if(dict[lang][key]) el.placeholder = dict[lang][key];
         });
+        document.querySelectorAll('.lang-select').forEach(s => s.value = lang);
+        safeStorage.set('pp_lang', lang);
       }
 
-      window.addEventListener('scroll', () => {
-        const firstCounter = document.querySelector('.counter');
-        if (firstCounter && !animated) {
-          const pos = firstCounter.getBoundingClientRect().top;
-          if (pos < window.innerHeight) {
-            triggerCounters();
-            animated = true;
-          }
-        }
+      document.querySelectorAll('.lang-select').forEach(s => {
+        s.addEventListener('change', (e) => setLang(e.target.value));
       });
 
-      // 6. AI Legal Assistant Drawer & Chat Logic
-      const aiChatToggle = document.getElementById('aiChatToggle');
-      const aiChatDrawerEl = document.getElementById('aiChatDrawer');
-      let aiDrawerInstance = null;
+      setLang(safeStorage.get('pp_lang') || 'en');
 
-      if (aiChatDrawerEl && typeof bootstrap !== 'undefined') {
-        aiDrawerInstance = new bootstrap.Offcanvas(aiChatDrawerEl);
-        aiChatToggle?.addEventListener('click', () => aiDrawerInstance.toggle());
-      }
+      // Form Submissions Engine
+      const bindForm = (id, msg) => {
+        const f = document.getElementById(id);
+        f?.addEventListener('submit', (e) => {
+          e.preventDefault();
+          alert(msg);
+          f.reset();
+          const modalEl = f.closest('.modal');
+          if(modalEl) bootstrap.Modal.getInstance(modalEl)?.hide();
+        });
+      };
 
-      const sendChatBtn = document.getElementById('sendChatBtn');
+      bindForm('heroQuickForm', 'Inquiry submitted successfully! Our advocates will contact you shortly.');
+      bindForm('modalConsultForm', 'Consultation booked successfully!');
+
+      // AI Chat Engine
       const chatInput = document.getElementById('chatInput');
-      const chatContainer = document.getElementById('chatContainer');
+      const chatSendBtn = document.getElementById('chatSendBtn');
+      const chatMessages = document.getElementById('chatMessages');
 
-      function escapeHTML(str) {
-        return str.replace(/[&<>'"]/g, tag => ({
-          '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
-        }[tag] || tag));
+      function appendMsg(text, isUser) {
+        const wrap = document.createElement('div');
+        wrap.className = `d-flex mb-3 ${isUser ? 'justify-content-end' : 'justify-content-start'}`;
+        const bubble = document.createElement('div');
+        bubble.className = isUser ? 'chat-bubble-user p-3' : 'chat-bubble-ai p-3';
+        bubble.style.maxWidth = '85%';
+        bubble.textContent = text;
+        wrap.appendChild(bubble);
+        chatMessages.appendChild(wrap);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
       }
 
-      function handleChatSubmit() {
-        if (!chatInput || !chatContainer) return;
-        const query = chatInput.value.trim();
-        if (!query) return;
-
-        // Add user query
-        const userMsg = document.createElement('div');
-        userMsg.className = 'bg-primary text-white p-3 rounded-3 shadow-sm mb-2 ms-auto max-w-85';
-        userMsg.textContent = query;
-        chatContainer.appendChild(userMsg);
-
+      function processChat() {
+        const val = chatInput.value.trim();
+        if(!val) return;
+        appendMsg(val, true);
         chatInput.value = '';
-        chatContainer.scrollTop = chatContainer.scrollHeight;
 
-        // Simulated AI Response
         setTimeout(() => {
-          const aiMsg = document.createElement('div');
-          aiMsg.className = 'bg-body p-3 rounded-3 shadow-sm mb-2 max-w-85 border';
-          aiMsg.innerHTML = `<small class="text-primary fw-bold d-block mb-1">AI Assistant</small>
-            Thank you for reaching out! Regarding "<em>${escapeHTML(query)}</em>", our legal team can provide detailed counsel. Please book a formal consultation or contact us directly at +91 98200 00000.`;
-          chatContainer.appendChild(aiMsg);
-          chatContainer.scrollTop = chatContainer.scrollHeight;
-        }, 800);
+          let reply = "Thank you for reaching out. For legal disputes in Maharashtra, please schedule a direct advisory session with Adv. P. P. Shinde.";
+          const q = val.toLowerCase();
+          if(q.includes('rera') || q.includes('builder') || q.includes('flat') || q.includes('property')) {
+            reply = "Regarding RERA & Property disputes, our firm handles builder delays, carpet area checks, and compensation claims under MahaRERA.";
+          } else if(q.includes('bail') || q.includes('police') || q.includes('criminal')) {
+            reply = "For urgent Criminal defense or anticipatory bail, please call our emergency hotline directly at +91 98200 00000.";
+          }
+          appendMsg(reply, false);
+        }, 700);
       }
 
-      sendChatBtn?.addEventListener('click', handleChatSubmit);
+      chatSendBtn?.addEventListener('click', processChat);
       chatInput?.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') handleChatSubmit();
-      });
-
-      // 7. Form Submissions
-      document.getElementById('secureUploadForm')?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Case file uploaded successfully! Our legal team will review it under strict confidentiality.');
-        e.target.reset();
-      });
-
-      document.getElementById('contactPageForm')?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you for contacting P. P. SHINDE & ASSOCIATE. We will respond promptly.');
-        e.target.reset();
-      });
-
-      document.getElementById('newsletterForm')?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you for subscribing to our legal newsletter!');
-        e.target.reset();
-      });
-
-      document.getElementById('consultationForm')?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Consultation request confirmed! Our advocate will reach out shortly to confirm your slot.');
-        e.target.reset();
-        const modalEl = document.getElementById('consultation-modal');
-        if (modalEl && typeof bootstrap !== 'undefined') {
-          const modalInstance = bootstrap.Modal.getInstance(modalEl);
-          modalInstance?.hide();
-        }
+        if(e.key === 'Enter') { e.preventDefault(); processChat(); }
       });
     });
   </script>

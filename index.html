@@ -58,7 +58,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
   <style>
-    /* ================= INLINE STYLES ================= */
+    /* Custom Design Tokens */
     :root {
       --bs-primary: #1e3a8a; /* Deep Legal Navy */
       --bs-primary-rgb: 30, 58, 138;
@@ -156,7 +156,7 @@
           </div>
         </a>
 
-        <!-- Mobile Right Utility -->
+        <!-- Mobile Language Selector & Toggle -->
         <div class="d-flex align-items-center gap-2 d-lg-none">
           <select class="form-select form-select-sm lang-select" aria-label="Language Selector Mobile">
             <option value="en">🇮🇳 EN</option>
@@ -188,7 +188,7 @@
                 <option value="mr">मराठी</option>
               </select>
             </div>
-            <a href="#consultation-modal" data-bs-toggle="modal" class="btn btn-primary btn-sm rounded-pill px-3" data-i18n="btn_book_consultation">Book Consultation</a>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal" class="btn btn-primary btn-sm rounded-pill px-3" data-i18n="btn_book_consultation">Book Consultation</button>
           </div>
         </div>
       </div>
@@ -204,7 +204,7 @@
           <h1 class="display-3 fw-bold mb-3" data-i18n="hero_title">Unyielding Integrity. Proven Results.</h1>
           <p class="lead mb-4 text-light opacity-90 max-w-700" data-i18n="hero_subtitle">Providing comprehensive legal services across Civil, Criminal, Corporate, and Family law with full fluency in English, Hindi, and Marathi.</p>
           <div class="d-flex flex-wrap gap-3">
-            <a href="#consultation-modal" data-bs-toggle="modal" class="btn btn-primary btn-lg rounded-pill px-4 shadow" data-i18n="btn_book_consultation">Book Consultation</a>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal" class="btn btn-primary btn-lg rounded-pill px-4 shadow" data-i18n="btn_book_consultation">Book Consultation</button>
             <a href="tel:+919820000000" class="btn btn-outline-light btn-lg rounded-pill px-4" data-i18n="btn_call_now">Call Now: +91 98200 00000</a>
           </div>
         </div>
@@ -241,12 +241,12 @@
     <div class="container py-4">
       <div class="row align-items-center g-5 mb-5">
         <div class="col-lg-6" data-aos="fade-right">
-          <h1 class="display-5 fw-bold text-primary mb-3">Our Legacy & Commitment</h1>
+          <h2 class="display-5 fw-bold text-primary mb-3">Our Legacy & Commitment</h2>
           <p class="lead text-muted">Founded by Advocate P. P. Shinde, P. P. SHINDE & ASSOCIATE has served clients across Maharashtra for over two decades.</p>
           <p>Our firm specializes in handling complex litigation in Civil, Criminal, Property, and Family law matters with exceptional expertise and ethical commitment.</p>
         </div>
         <div class="col-lg-6" data-aos="fade-left">
-          <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-3 shadow" alt="Advocate P. P. Shinde">
+          <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-3 shadow" alt="Advocate P. P. Shinde Office">
         </div>
       </div>
       
@@ -294,7 +294,7 @@
               </div>
               <h4 class="card-title fw-bold" data-i18n="civil_law_title">Civil Litigation</h4>
               <p class="card-text text-muted" data-i18n="civil_law_desc">Property disputes, recovery suits, injunctions, and contract enforcement under Indian Jurisdictions.</p>
-              <a href="#consultation-modal" data-bs-toggle="modal" class="fw-semibold text-primary text-decoration-none" data-i18n="btn_read_more">Book Consult <i class="fa-solid fa-arrow-right ms-1"></i></a>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal" class="btn btn-link p-0 fw-semibold text-primary text-decoration-none" data-i18n="btn_read_more">Book Consult <i class="fa-solid fa-arrow-right ms-1"></i></button>
             </div>
           </div>
         </div>
@@ -308,7 +308,7 @@
               </div>
               <h4 class="card-title fw-bold" data-i18n="criminal_law_title">Criminal Defense</h4>
               <p class="card-text text-muted" data-i18n="criminal_law_desc">Bail applications, trial defense, economic offenses, and High Court appeals across Maharashtra.</p>
-              <a href="#consultation-modal" data-bs-toggle="modal" class="fw-semibold text-primary text-decoration-none" data-i18n="btn_read_more">Book Consult <i class="fa-solid fa-arrow-right ms-1"></i></a>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal" class="btn btn-link p-0 fw-semibold text-primary text-decoration-none" data-i18n="btn_read_more">Book Consult <i class="fa-solid fa-arrow-right ms-1"></i></button>
             </div>
           </div>
         </div>
@@ -322,7 +322,7 @@
               </div>
               <h4 class="card-title fw-bold" data-i18n="property_law_title">Property & RERA</h4>
               <p class="card-text text-muted" data-i18n="property_law_desc">Title search reports, property verification, RERA litigation, and redevelopment agreements.</p>
-              <a href="#consultation-modal" data-bs-toggle="modal" class="fw-semibold text-primary text-decoration-none" data-i18n="btn_read_more">Book Consult <i class="fa-solid fa-arrow-right ms-1"></i></a>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal" class="btn btn-link p-0 fw-semibold text-primary text-decoration-none" data-i18n="btn_read_more">Book Consult <i class="fa-solid fa-arrow-right ms-1"></i></button>
             </div>
           </div>
         </div>
@@ -369,7 +369,7 @@
   <section id="team" class="py-5 bg-body-tertiary">
     <div class="container py-4">
       <div class="text-center mb-5" data-aos="fade-up">
-        <h1 class="display-5 fw-bold">Our Experienced Legal Team</h1>
+        <h2 class="display-5 fw-bold">Our Experienced Legal Team</h2>
         <p class="text-muted">Advocates dedicated to protecting your legal rights.</p>
       </div>
 
@@ -380,9 +380,9 @@
             <div class="card-body">
               <h4 class="fw-bold mb-1">Adv. P. P. Shinde</h4>
               <p class="text-primary fs-7 fw-semibold">Founder & Senior Advocate</p>
-              <p class="fs-7 text-muted"><strong>Qualification:</strong> B.Sc., LL.M.</p>
-              <p class="fs-7 text-muted"><strong>Experience:</strong> 25+ Years</p>
-              <p class="fs-7 text-muted"><strong>Languages:</strong> English, Hindi, Marathi</p>
+              <p class="fs-7 text-muted mb-1"><strong>Qualification:</strong> B.Sc., LL.M.</p>
+              <p class="fs-7 text-muted mb-1"><strong>Experience:</strong> 25+ Years</p>
+              <p class="fs-7 text-muted mb-0"><strong>Languages:</strong> English, Hindi, Marathi</p>
             </div>
           </div>
         </div>
@@ -393,7 +393,7 @@
   <!-- Blog / Legal Updates Section -->
   <section id="blog" class="py-5">
     <div class="container py-4">
-      <h1 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">Latest Legal Insights & Updates</h1>
+      <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">Latest Legal Insights & Updates</h2>
       <div class="row g-4">
         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
           <div class="card h-100 border-0 shadow-sm">
@@ -485,10 +485,10 @@
 
   <!-- Floating Utilities: WhatsApp & AI Assistant Button -->
   <div class="position-fixed bottom-0 end-0 p-3 d-flex flex-column gap-2 style-floating-utilities" style="z-index: 1050;">
-    <button class="btn btn-primary rounded-circle p-3 shadow-lg d-flex align-items-center justify-content-center" id="aiChatToggle" title="AI Legal Assistant" style="width: 55px; height: 55px;">
+    <button class="btn btn-primary rounded-circle p-3 shadow-lg d-flex align-items-center justify-content-center" id="aiChatToggle" type="button" title="AI Legal Assistant" style="width: 55px; height: 55px;">
       <i class="fa-solid fa-robot fs-4"></i>
     </button>
-    <a href="https://wa.me/919820000000?text=Hello%20P.%20P.%20SHINDE%20%26%20ASSOCIATE,%20I%20need%20legal%20assistance." target="_blank" class="btn btn-success rounded-circle p-3 shadow-lg d-flex align-items-center justify-content-center" title="WhatsApp Chat" style="width: 55px; height: 55px;">
+    <a href="https://wa.me/919820000000?text=Hello%20P.%20P.%20SHINDE%20%26%20ASSOCIATE,%20I%20need%20legal%20assistance." target="_blank" rel="noopener noreferrer" class="btn btn-success rounded-circle p-3 shadow-lg d-flex align-items-center justify-content-center" title="WhatsApp Chat" style="width: 55px; height: 55px;">
       <i class="fa-brands fa-whatsapp fs-3"></i>
     </a>
   </div>
@@ -702,92 +702,78 @@
       }
     };
 
-    /* ================= MAIN SCRIPT LOGIC ================= */
+    /* ================= MAIN INTERACTION LOGIC ================= */
     document.addEventListener('DOMContentLoaded', () => {
-      // 1. Initialize AOS Animations
-      AOS.init({
-        duration: 800,
-        once: true,
-        offset: 100
-      });
+      // 1. Initialize AOS Animations safely
+      if (typeof AOS !== 'undefined') {
+        AOS.init({ duration: 800, once: true, offset: 100 });
+      }
 
-      // 2. Hide Loader
+      // 2. Loading Overlay Fade Out
       const spinner = document.getElementById('loading-spinner');
       if (spinner) {
         setTimeout(() => {
           spinner.style.opacity = '0';
           setTimeout(() => spinner.style.display = 'none', 300);
-        }, 500);
+        }, 300);
       }
 
-      // 3. Language Selector Logic
+      // 3. Language Switcher Engine
       const langSelectors = document.querySelectorAll('.lang-select');
       
       function getInitialLanguage() {
         const saved = localStorage.getItem('pp_shinde_lang');
         if (saved && ['en', 'hi', 'mr'].includes(saved)) return saved;
-        
-        const browserLang = window.navigator.language.slice(0, 2);
-        if (['hi', 'mr'].includes(browserLang)) return browserLang;
-        return 'en';
+        const browserLang = (navigator.language || 'en').slice(0, 2);
+        return ['hi', 'mr'].includes(browserLang) ? browserLang : 'en';
       }
 
       function applyLanguage(lang) {
         if (!translations[lang]) return;
-        
-        document.querySelectorAll('[data-i18n]').forEach(element => {
-          const key = element.getAttribute('data-i18n');
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
           if (translations[lang][key]) {
-            element.textContent = translations[lang][key];
+            el.textContent = translations[lang][key];
           }
         });
-
-        langSelectors.forEach(select => select.value = lang);
+        langSelectors.forEach(sel => sel.value = lang);
         localStorage.setItem('pp_shinde_lang', lang);
         document.documentElement.lang = lang;
       }
 
-      langSelectors.forEach(select => {
-        select.addEventListener('change', (e) => {
-          applyLanguage(e.target.value);
-        });
+      langSelectors.forEach(sel => {
+        sel.addEventListener('change', (e) => applyLanguage(e.target.value));
       });
-
       applyLanguage(getInitialLanguage());
 
-      // 4. Dark / Light Mode Toggle
+      // 4. Dark / Light Theme Toggle
       const themeToggleBtn = document.getElementById('themeToggle');
       const themeIcon = document.getElementById('themeIcon');
       
       function setTheme(theme) {
         document.documentElement.setAttribute('data-bs-theme', theme);
         localStorage.setItem('pp_shinde_theme', theme);
-        if (theme === 'dark') {
-          themeIcon.className = 'fa-solid fa-sun text-warning';
-        } else {
-          themeIcon.className = 'fa-solid fa-moon text-warning';
+        if (themeIcon) {
+          themeIcon.className = theme === 'dark' ? 'fa-solid fa-sun text-warning' : 'fa-solid fa-moon text-warning';
         }
       }
 
       const savedTheme = localStorage.getItem('pp_shinde_theme') || 'light';
       setTheme(savedTheme);
 
-      if (themeToggleBtn) {
-        themeToggleBtn.addEventListener('click', () => {
-          const current = document.documentElement.getAttribute('data-bs-theme');
-          setTheme(current === 'dark' ? 'light' : 'dark');
-        });
-      }
+      themeToggleBtn?.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-bs-theme');
+        setTheme(current === 'dark' ? 'light' : 'dark');
+      });
 
-      // 5. Animated Counters
+      // 5. Counter Animations
       const counters = document.querySelectorAll('.counter');
       let animated = false;
 
       function triggerCounters() {
         counters.forEach(counter => {
           const target = +counter.getAttribute('data-target');
-          const speed = target / 50;
-          
+          const speed = target / 40;
           const updateCount = () => {
             const count = +counter.innerText;
             if (count < target) {
@@ -802,9 +788,9 @@
       }
 
       window.addEventListener('scroll', () => {
-        const section = document.querySelector('.counter');
-        if (section && !animated) {
-          const pos = section.getBoundingClientRect().top;
+        const firstCounter = document.querySelector('.counter');
+        if (firstCounter && !animated) {
+          const pos = firstCounter.getBoundingClientRect().top;
           if (pos < window.innerHeight) {
             triggerCounters();
             animated = true;
@@ -812,14 +798,14 @@
         }
       });
 
-      // 6. AI Legal Assistant Drawer Setup
+      // 6. AI Legal Assistant Drawer & Chat Logic
       const aiChatToggle = document.getElementById('aiChatToggle');
-      const aiChatDrawerElement = document.getElementById('aiChatDrawer');
+      const aiChatDrawerEl = document.getElementById('aiChatDrawer');
       let aiDrawerInstance = null;
 
-      if (aiChatDrawerElement) {
-        aiDrawerInstance = new bootstrap.Offcanvas(aiChatDrawerElement);
-        aiChatToggle.addEventListener('click', () => aiDrawerInstance.toggle());
+      if (aiChatDrawerEl && typeof bootstrap !== 'undefined') {
+        aiDrawerInstance = new bootstrap.Offcanvas(aiChatDrawerEl);
+        aiChatToggle?.addEventListener('click', () => aiDrawerInstance.toggle());
       }
 
       const sendChatBtn = document.getElementById('sendChatBtn');
@@ -827,15 +813,17 @@
       const chatContainer = document.getElementById('chatContainer');
 
       function escapeHTML(str) {
-        return str.replace(/[&<>'"]/g, 
-          tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
-        );
+        return str.replace(/[&<>'"]/g, tag => ({
+          '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+        }[tag] || tag));
       }
 
       function handleChatSubmit() {
+        if (!chatInput || !chatContainer) return;
         const query = chatInput.value.trim();
         if (!query) return;
 
+        // Add user query
         const userMsg = document.createElement('div');
         userMsg.className = 'bg-primary text-white p-3 rounded-3 shadow-sm mb-2 ms-auto max-w-85';
         userMsg.textContent = query;
@@ -844,53 +832,51 @@
         chatInput.value = '';
         chatContainer.scrollTop = chatContainer.scrollHeight;
 
+        // Simulated AI Response
         setTimeout(() => {
           const aiMsg = document.createElement('div');
           aiMsg.className = 'bg-body p-3 rounded-3 shadow-sm mb-2 max-w-85 border';
           aiMsg.innerHTML = `<small class="text-primary fw-bold d-block mb-1">AI Assistant</small>
-            Thank you for your question. For detailed evaluation regarding "<em>${escapeHTML(query)}</em>", please schedule a formal consultation or contact our office directly at +91 98200 00000.`;
+            Thank you for reaching out! Regarding "<em>${escapeHTML(query)}</em>", our legal team can provide detailed counsel. Please book a formal consultation or contact us directly at +91 98200 00000.`;
           chatContainer.appendChild(aiMsg);
           chatContainer.scrollTop = chatContainer.scrollHeight;
-        }, 1000);
+        }, 800);
       }
 
-      if (sendChatBtn) sendChatBtn.addEventListener('click', handleChatSubmit);
-      if (chatInput) {
-        chatInput.addEventListener('keypress', (e) => {
-          if (e.key === 'Enter') handleChatSubmit();
-        });
-      }
+      sendChatBtn?.addEventListener('click', handleChatSubmit);
+      chatInput?.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') handleChatSubmit();
+      });
 
-      // 7. Form Handlers
-      const uploadForm = document.getElementById('secureUploadForm');
-      if (uploadForm) {
-        uploadForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-          alert('Document submitted successfully. Our legal team will review it under strict confidentiality.');
-          uploadForm.reset();
-        });
-      }
+      // 7. Form Submissions
+      document.getElementById('secureUploadForm')?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Case file uploaded successfully! Our legal team will review it under strict confidentiality.');
+        e.target.reset();
+      });
 
-      const contactForm = document.getElementById('contactPageForm');
-      if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-          alert('Thank you for contacting us. We will get back to you shortly.');
-          contactForm.reset();
-        });
-      }
+      document.getElementById('contactPageForm')?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you for contacting P. P. SHINDE & ASSOCIATE. We will respond promptly.');
+        e.target.reset();
+      });
 
-      const consultationForm = document.getElementById('consultationForm');
-      if (consultationForm) {
-        consultationForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-          alert('Consultation scheduled successfully! Our team will call you to confirm your slot.');
-          consultationForm.reset();
-          const modalEl = document.getElementById('consultation-modal');
-          const modalObj = bootstrap.Modal.getInstance(modalEl);
-          if (modalObj) modalObj.hide();
-        });
-      }
+      document.getElementById('newsletterForm')?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you for subscribing to our legal newsletter!');
+        e.target.reset();
+      });
+
+      document.getElementById('consultationForm')?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Consultation request confirmed! Our advocate will reach out shortly to confirm your slot.');
+        e.target.reset();
+        const modalEl = document.getElementById('consultation-modal');
+        if (modalEl && typeof bootstrap !== 'undefined') {
+          const modalInstance = bootstrap.Modal.getInstance(modalEl);
+          modalInstance?.hide();
+        }
+      });
     });
   </script>
 </body>
